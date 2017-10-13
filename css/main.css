@@ -59,7 +59,7 @@ body textarea:required:valid {
   }
 }
 h2 {
-font-size: 4.5rem;
+font-size: 3.5rem;
 letter-spacing: 4px;
 position: relative;
 text-transform: uppercase;
@@ -571,7 +571,6 @@ margin-top: 62px;
 .block-img {
 	position: relative;
 	overflow: hidden;
-	max-height: 360px;
 }
 .block-img img {
 	width: 100%;
@@ -612,30 +611,30 @@ font-size: 25px;
 	}
 .wrap-product .info .block-buts .btn-moreinfo {
 	margin: 15px 9px;
-	border: 2px solid #000;
-	height: 60px;
-	font-size: 20px;
-	border-radius: 60px;
-	background: none;
-	padding: 0 65px;
-	color: #000;
-	font-family: "AgoraSansProRegular", sans-serif;
-	transition: all 0.2s linear;
+    border: 2px solid #000;
+    height: 48px;
+    font-size: 18px;
+    border-radius: 60px;
+    background: none;
+    padding: 0 50px;
+    color: #000;
+    font-family: "AgoraSansProRegular", sans-serif;
+    transition: all 0.2s linear;
 	}
 	.wrap-product .info .block-buts .btn-moreinfo:hover {
 		background: #dad9d2;
 	}
 .wrap-product .info .block-buts .btn-order {
 	font-family: "AgoraSansProRegular", sans-serif;
-	margin: 15px 9px;
-	border: none;
-	height: 60px;
-	font-size: 20px;
-	border-radius: 60px;
-	background: #cf0e14;
-	padding: 0 65px;
-	color: #fff;
-	transition: all 0.2s linear;
+    margin: 0px 0px 20px 0px;
+    border: none;
+    height: 54px;
+    font-size: 20px;
+    border-radius: 60px;
+    background: #cf0e14;
+    padding: 0 56px;
+    color: #fff;
+    transition: all 0.2s linear;
 	}
 .wrap-product .info .block-buts .btn-order:hover {
 	background: #ab080d;
@@ -643,20 +642,20 @@ font-size: 25px;
 }
 
 .title-glases-icon {
-	color: #d1cec2;
-	    margin-top: 35px;
-	font-family: "AgoraSansProBold", sans-serif;
-	font-size: 50px;
-	    margin-bottom: 18px;
-	position: relative;
+	    color: #d1cec2;
+    margin-top: 0px;
+    font-family: "AgoraSansProBold", sans-serif;
+    font-size: 35px;
+    margin-bottom: 18px;
+    position: relative;
 }
 .title-glases-icon:before {
 content: "";
 display: inline-block;
 margin-right: 20px;
-width: 111px;
-height: 37px;
-background: url(../img/glases-icon.png) no-repeat;
+width: 44px;
+height: 70px;
+background: url(../img/glases-icon.jpg) no-repeat;
 	}
 .btn-obsl {
 	margin: 15px auto;
@@ -1351,7 +1350,7 @@ color: #2a2928;
 	letter-spacing: 0em;
 }
 .wrap-cart .popup-image-slide img {
-width: 100%;
+width: 30%;
 height: auto;
 margin-bottom: 25px;
 }
@@ -1668,16 +1667,16 @@ margin:170px auto;
 	background: url("../img/bg-first-screen.jpg") no-repeat;
 	background-position: center top;
 	background-size: cover;
-	min-height: 925px;
+	min-height: 686px;
 }
 
 .first-screen h1 {
-	font-size: 75px;
+	font-size: 35px;
 	font-family: "Akrobat-Black", sans-serif;
 	text-align: center;
 	margin-top: 124px;
 	margin-bottom: 10px;
-	line-height: 95px;
+	line-height: 4px;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -1707,4 +1706,24 @@ margin:170px auto;
 }
 .first-screen .eye1:hover {
 	opacity: 1;
+}
+.garant ul{
+        margin-top: 65px;
+}
+.garant ul li{
+    font-size: 18px;
+    list-style: circle
+}
+.garant{
+    border: 2px solid red;
+    width:99%;
+    overflow: hidden;
+    border-style: dashed;
+}
+.garant img{
+    display: block;
+    float: left;
+    margin: 5px 37px 0px;
+    width: 53%;
+
 }

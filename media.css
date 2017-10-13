@@ -59,7 +59,6 @@
     .block-img {
     position: relative;
     overflow: hidden;
-    max-height: 214px;
 }
 .wrap-product .info .title {
     font-size: 16px;

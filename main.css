@@ -565,10 +565,10 @@ margin-top: 62px;
 .block-img {
 	position: relative;
 	overflow: hidden;
-	max-height: 360px;
 }
 .block-img img {
 	width: 100%;
+    max-height: 900px;
 }
 .wrap-product .info {
 text-align: center;

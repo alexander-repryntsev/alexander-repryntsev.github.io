@@ -59,33 +59,7 @@ include_once($path);
     <div style="display:none;">
 <a href="//scroogefrog.com/en/?referrer_id=18820"><img src="//stat.clickfrog.ru/img/clfg_ref/icon_0.png" alt="spyware adware malware removal"></a><div id="clickfrog_counter_container" style="width:0px;height:0px;overflow:hidden;"></div><script type="text/javascript">(function(d, w) {var clickfrog = function() {if(!d.getElementById('clickfrog_js_container')) {var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.src = "//stat.clickfrog.ru/c.js?r="+Math.random();sc.id = 'clickfrog_js_container';var c = document.getElementById('clickfrog_counter_container');c.parentNode.insertBefore(sc, c);}};if(w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded",clickfrog,false);}else {clickfrog();}})(document, window);</script><noscript><div style="width:0px;height:0px;overflow:hidden;"><img src="//stat.clickfrog.ru/no_script.php?img" style="width:0px; height:0px;" alt=""/></div></noscript><script type="text/javascript">var clickfrogru_uidh='9d91ccc9530e9b9102a0c93c76f9179a';</script></div>
     
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-100600107-1', 'auto');
-      ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-
-</script>
-    
-    <!-- Rating@Mail.ru counter -->
-<script type="text/javascript">
-var _tmr = window._tmr || (window._tmr = []);
-_tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
-(function (d, w, id) {
-  if (d.getElementById(id)) return;
-  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
-  ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
-  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
-  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
-})(document, window, "topmailru-code");
-</script><noscript><div>
-<img src="//top-fwz1.mail.ru/counter?id=2910816;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
-</div></noscript>
-<!-- //Rating@Mail.ru counter -->
+  
 
 
 	<div class="header-mob visible-xs">
@@ -129,8 +103,8 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 					<img src="img/logo.png" srcset="img/logo.png 2x" alt="">
 				</div>
 				<div class="descr-header hidden-xs">
-					<p>Продажа брендовых <br>
-						наручных часов</p>
+					<p>Магазин наручных<br> часов
+						в Украине</p>
 				</div>
 
 			</div>
@@ -153,8 +127,8 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 	<section class="first-screen">
 		<div class="container">
 			<div class="row">
-				<h1>Лучшие брендовые часы</h1>
-				<p>для Вас и Ваших близких</p>
+				<h1>Турецкие реплики наручных часов ААА-класса качества</h1>
+				<p>Цена снижена до 34% на 1 день</p>
 			</div>
 			<div class="row  row-eye">
 				<a href="#" class="eye1"></a>
@@ -255,7 +229,7 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 				</div>
 			</div>
 			<div class="wrap-priser col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<div class="box-prising"><span class="title">Цена:</span> <strike class="sale">750</strike><span class="price">499 грн</span></div>
+			<div class="box-prising"><span class="title">Цена:</span> <strike class="sale">1250</strike><span class="price">799 грн</span></div>
 			<a href="#aviator-catalog" class="btn-cunstr">Хочу такие!</a>
 			</div>
 			</form>
@@ -264,573 +238,64 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 	</div>
 </section> -->
 <!-- Секция каталога НАЧАЛО -->
+    
+    <section id="choose">
+	<div class="container">
+	<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h2>Что мы можем вам предложить?</h2>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/viE6d0eZbO4" frameborder="0" allowfullscreen></iframe>
+			</div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			
+                <ul>
+                <li>
+                    
+                </li>
+                </ul>
+			</div>
+		</div>
+	</div>
+</section>
+    
 <section id="catalog">
 		<div class="container">
 		<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<h2>20 уникальных и неповторимых моделей Ray-ban</h2>
+			<h2>Найдите своего хранителя времени</h2>
 		</div>
 		</div>
 		<!-- Блок всех моделей НАЧАЛО -->
 		<div id="wayfarer-catalog" class="row">
-		<!-- Название модели НАЧАЛО -->
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="title-glases-icon">Wayfarer</div></div>
-		<!-- Название модели КОНЕЦ -->
+		<!-- Название типа НАЧАЛО -->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="title-glases-icon">Кварцевые наручные часы</div></div>
+		<!-- Название типа КОНЕЦ -->
 		<!-- Блок Wayfarer типа моделей НАЧАЛО -->
 		<div class="js-model-wrap">
 			<div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<!-- Один блок модели НАЧАЛО -->
 			<div class="wrap-product">
 					<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
+					<li>Страна производитель: <span><b>Турция</b></span></li>
+                        <li>Пол: <span><b>Мужские</b></span></li>
+                        <li>Материал ремешка: <span><b>Каучук</b></span></li>
+                        <li>Стекло: <span><b>Сапфировое ударопрочное</b></span></li>
+                        <li>Тип механизма: <span><b>Кварцевые</b></span></li>
+                        <li>Застежка: <span><b>Простая металлическая</b></span></li>
+                        <li>Наличие индикатора даты: <span><b>Есть</b></span></li> 
 				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				</div>
 				<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-1/1.jpg"><img src="img/products/wf-1/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-1/2.jpg"><img class="hidden" src="img/products/wf-1/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-1/3.jpg"><img class="hidden" src="img/products/wf-1/3.jpg" alt="Alt"></a>
+				<a href="img/products/em_main.jpg"><img src="img/products/em_main.jpg" alt="Alt"></a>
+				<!--<a href="img/products/hublot.png"><img class="hidden" src="img/products/hublot.png" alt="Alt"></a>-->
 				
 				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b> черная классика</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="btn-moreinfo js-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			<!-- Один блок модели Wayfarer КОНЕЦ -->
-			</div>
-            
-			<div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-2/1.jpg"><img src="img/products/wf-2/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-2/2.jpg"><img class="hidden" src="img/products/wf-2/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-2/3.jpg"><img class="hidden" src="img/products/wf-2/3.jpg" alt="Alt"></a>		
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b>  черные с зелеными линзами</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!--Блок второй модели Wayfarer КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-6/1.jpg"><img src="img/products/wf-6/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-6/2.jpg"><img class="hidden" src="img/products/wf-6/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-6/3.jpg"><img class="hidden" src="img/products/wf-6/3.jpg" alt="Alt"></a>		
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b> Синие матовые</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!--Блок третьей модели Wayfarer КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-3/1.jpg"><img src="img/products/wf-3/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-3/2.jpg"><img class="hidden" src="img/products/wf-3/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-3/3.jpg"><img class="hidden" src="img/products/wf-3/3.jpg" alt="Alt"></a>
-                	
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b>  черно-белая оправа со вставками</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!--Блок четвертой модели Wayfarer КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-5/1.jpg"><img src="img/products/wf-5/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-5/2.jpg"><img class="hidden" src="img/products/wf-5/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-5/3.jpg"><img class="hidden" src="img/products/wf-5/3.jpg" alt="Alt"></a>		
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b>  Темное дерево</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!--Блок пятой модели Wayfarer КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-4/1.jpg"><img src="img/products/wf-4/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-4/2.jpg"><img class="hidden" src="img/products/wf-4/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-4/3.jpg"><img class="hidden" src="img/products/wf-4/3.jpg" alt="Alt"></a>
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b>  Черно-белая оправа</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!--Блок шестой модели Wayfarer КОНЕЦ -->
-            
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-7/1.jpg"><img src="img/products/wf-7/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-7/2.jpg"><img class="hidden" src="img/products/wf-7/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-7/3.jpg"><img class="hidden" src="img/products/wf-7/3.jpg" alt="Alt"></a>		
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b>  коричневые</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!--Блок 7 модели Wayfarer КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Поликарбонат</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 45 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 145 мм.</li>
-				</ul>
-				<ul class="js-size-push">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 40 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/wf-8/1.jpg"><img src="img/products/wf-8/1.jpg" alt="Alt"></a>
-				<a href="img/products/wf-8/2.jpg"><img class="hidden" src="img/products/wf-8/2.jpg" alt="Alt"></a>
-				<a href="img/products/wf-8/3.jpg"><img class="hidden" src="img/products/wf-8/3.jpg" alt="Alt"></a>
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Wayfarer</b>  Черно-бежевая оправа</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!--Блок 8 модели Wayfarer КОНЕЦ -->
-            
-            
-			</div>
-			</div>
-<!-- Блок одного типа моделей КОНЕЦ -->
-            
-<!-- Блок всех моделей НАЧАЛО -->
-		<div id="clubmaster-catalog" class="row">
-		<!-- Название модели НАЧАЛО -->
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="title-glases-icon">Clubmaster</div></div>
-		<!-- Название модели КОНЕЦ -->
-		<!-- Блок одного типа моделей НАЧАЛО -->
-		<div class="js-model-wrap">
-			<div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<!-- Один блок модели НАЧАЛО -->
-			<div class="wrap-product">
-					<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Поликарбонат</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик+металл</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 42 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-				</div>
-				<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/cl-1/1.jpg"><img src="img/products/cl-1/1.jpg" alt="Alt"></a>
-				<a href="img/products/cl-1/2.jpg"><img class="hidden" src="img/products/cl-1/2.jpg" alt="Alt"></a>
-				<a href="img/products/cl-1/3.jpg"><img class="hidden" src="img/products/cl-1/3.jpg" alt="Alt"></a>
-
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Clubmaster</b> черные</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="btn-moreinfo js-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			<!-- Один блок модели КОНЕЦ -->
-			</div>
-            
-			<div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-					<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик+металл</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 42 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-				</div>
-				<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/cl-2/1.jpg"><img src="img/products/cl-2/1.jpg" alt="Alt"></a>
-				<a href="img/products/cl-2/2.jpg"><img class="hidden" src="img/products/cl-2/2.jpg" alt="Alt"></a>
-				<a href="img/products/cl-2/3.jpg"><img class="hidden" src="img/products/cl-2/3.jpg" alt="Alt"></a>
-
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Clubmaster</b> черные с зелёными линзами</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="btn-moreinfo js-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-            </div>
-            <!-- Блок второй модели Clubmaster КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-					<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Поликарбонат</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик+металл</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 42 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-				</div>
-				<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/cl-3/1.jpg"><img src="img/products/cl-3/1.jpg" alt="Alt"></a>
-				<a href="img/products/cl-3/2.jpg"><img class="hidden" src="img/products/cl-3/2.jpg" alt="Alt"></a>
-				<a href="img/products/cl-3/3.jpg"><img class="hidden" src="img/products/cl-3/3.jpg" alt="Alt"></a>
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Clubmaster</b> черно-белая оправа</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="btn-moreinfo js-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-            </div>
-            <!-- Блок третьей модели Clubmaster КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-					<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Пластик+металл</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 50 мм.</li>
-					<li>Высота линз: 42 мм.</li>
-					<li>Длина дужек: 140 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-				</div>
-				<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/cl-4/1.jpg"><img src="img/products/cl-4/1.jpg" alt="Alt"></a>
-				<a href="img/products/cl-4/2.jpg"><img class="hidden" src="img/products/cl-4/2.jpg" alt="Alt"></a>
-				<a href="img/products/cl-4/3.jpg"><img class="hidden" src="img/products/cl-4/3.jpg" alt="Alt"></a>
-               
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Clubmaster</b> леопардовые</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="btn-moreinfo js-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-            </div>
-            <!-- Блок четвертой модели Clubmaster КОНЕЦ -->
-            
-			</div>
-			</div>
-<!-- Блок одного типа моделей КОНЕЦ -->
-<!-- Блок всех моделей НАЧАЛО -->
-		<div id="aviator-catalog" class="row">
-		<!-- Название модели НАЧАЛО -->
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="title-glases-icon">Aviator</div></div>
-		<!-- Название модели КОНЕЦ -->
-		<!-- Блок Aviator типа моделей НАЧАЛО -->
-		<div class="js-model-wrap">
-			<div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<!-- Один блок модели НАЧАЛО -->
-			<div class="wrap-product">
-					<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-				</div>
-				<div class="block-img js-image-pull js-popup-tosrus">
-				<a href="img/products/a-1/1.jpg"><img src="img/products/a-1/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-1/2.jpg"><img class="hidden" src="img/products/a-1/2.jpg" alt="Alt"></a>
-				<a href="img/products/a-1/3.jpg"><img class="hidden" src="img/products/a-1/3.jpg" alt="Alt"></a>	
-
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> бирюзовые</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
+				<div class="info"><div class="title js-title-pull"><b>Emporio Armani</b> Black</div>
+				<div class="blok-cost"><span>Цена: </span><s> 1250 </s><b> 799 грн</b></div>
 				<div class="block-buts"><button class="btn-moreinfo js-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
 				</div>
 			</div>
@@ -840,377 +305,141 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 			<div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<div class="wrap-product">
 				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
+					<li>Страна производитель: <span><b>Турция</b></span></li>
+                        <li>Пол: <span><b>Мужские</b></span></li>
+                        <li>Материал ремешка: <span><b>Металл</b></span></li>
+                        <li>Стекло: <span><b>Сапфировое ударопрочное</b></span></li>
+                        <li>Тип механизма: <span><b>Кварцевые</b></span></li>
+                        <li>Застежка: <span><b>Металлическая клипса</b></span></li>
+                        <li>Наличие индикатора даты: <span><b>Есть</b></span></li> 
 				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
+				
 					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-2/1.jpg"><img src="img/products/a-2/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-2/2.jpg"><img class="hidden" src="img/products/a-2/2.jpg" alt="Alt"></a>	
-				<a href="img/products/a-2/3.jpg"><img class="hidden" src="img/products/a-2/3.jpg" alt="Alt"></a>	
+				<a href="img/products/emsilver_main.jpg"><img src="img/products/emsilver_main.jpg" alt="Alt"></a>	
 				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> с синими линзами</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
+				<div class="info"><div class="title js-title-pull"><b>Emporio Armani</b>  Silver</div>
+				<div class="blok-cost"><span>Цена: </span><s> 1250 </s><b> 799 грн</b></div>
 				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
 				</div>
 			</div>
 			</div>
-            <!-- Блок второй модели Авиатор КОНЕЦ -->
+            <!--Блок второй модели КОНЕЦ -->
+           
             
             <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<div class="wrap-product">
 				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
+					<li>Страна производитель: <span><b>Турция</b></span></li>
+                        <li>Пол: <span><b>Мужские</b></span></li>
+                        <li>Материал ремешка: <span><b>Металл</b></span></li>
+                        <li>Стекло: <span><b>Сапфировое ударопрочное</b></span></li>
+                        <li>Тип механизма: <span><b>Кварцевые</b></span></li>
+                        <li>Застежка: <span><b>Металлическая клипса</b></span></li>
+                        <li>Наличие индикатора даты: <span><b>Есть</b></span></li> 
 				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
+				
 					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-3/1.jpg"><img src="img/products/a-3/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-3/2.jpg"><img class="hidden" src="img/products/a-3/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-3/3.jpg"><img class="hidden" src="img/products/a-3/3.jpg" alt="Alt"></a>
+				<a href="img/products/rolex_main.jpg"><img src="img/products/rolex_main.jpg" alt="Alt"></a>
+					
 				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> черная классика</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
+				<div class="info"><div class="title js-title-pull"><b>Rolex Daytona</b>  Gold</div>
+				<div class="blok-cost"><span>Цена: </span><s> 1250 </s><b> 799 грн</b></div>
 				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
 				</div>
 			</div>
 			</div>
-            <!-- Блок третьей модели Авиатор КОНЕЦ -->
+            <!--Блок 3 модели КОНЕЦ -->
             
             <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<div class="wrap-product">
 				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
+					<li>Страна производитель: <span><b>Турция</b></span></li>
+                        <li>Пол: <span><b>Мужские</b></span></li>
+                        <li>Материал ремешка: <span><b>Каучук</b></span></li>
+                        <li>Стекло: <span><b>Сапфировое ударопрочное</b></span></li>
+                        <li>Тип механизма: <span><b>Кварцевые</b></span></li>
+                        <li>Застежка: <span><b>Металлическая клипса</b></span></li>
+                        <li>Наличие индикатора даты: <span><b>Есть</b></span></li> 
 				</ul>
 				<div class="js-wrap-sizer-pull">
 				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
+				<div class="class-standart" onclick="parseData($(this))">Маленькие</div>
 				<ul class="js-size-push active">
 					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
+					<li>Высота линз: 45 мм.</li>
+					<li>Длина дужек: 140 мм.</li>
+					<li>Ширина оправы 145 мм.</li>
+				</ul>
+				<ul class="js-size-push">
+					<li>Ширина линз: 50 мм.</li>
+					<li>Высота линз: 40 мм.</li>
+					<li>Длина дужек: 140 мм.</li>
 					<li>Ширина оправы 140 мм.</li>
 				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
 			
 				</div>
 					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-9/1.jpg"><img src="img/products/a-9/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-9/2.jpg"><img class="hidden" src="img/products/a-9/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-9/3.jpg"><img class="hidden" src="img/products/a-9/3.jpg" alt="Alt"></a>
+				<a href="img/products/hublot_main.jpg"><img src="img/products/hublot_main.jpg" alt="Alt"></a>		
 				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> с зеркальными жёлтыми линзами</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
+				<div class="info"><div class="title js-title-pull"><b>Hublot Geneve</b>  Big Bang</div>
+				<div class="blok-cost"><span>Цена: </span><s> 1250 </s><b> 799 грн</b></div>
 				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
 				</div>
 			</div>
 			</div>
-            <!-- Блок 3-1 модели Авиатор КОНЕЦ -->
+            <!--Блок 4 модели КОНЕЦ -->
             
             <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<div class="wrap-product">
 				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
+					<li>Страна производитель: <span><b>Турция</b></span></li>
+                        <li>Пол: <span><b>Мужские</b></span></li>
+                        <li>Материал ремешка: <span><b>Керамический</b></span></li>
+                        <li>Стекло: <span><b>Сапфировое ударопрочное</b></span></li>
+                        <li>Тип механизма: <span><b>Кварцевые</b></span></li>
+                        <li>Застежка: <span><b>Металлическая клипса</b></span></li>
+                        <li>Наличие индикатора даты: <span><b>Есть</b></span></li> 
 				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
+				
 					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-10/1.jpg"><img src="img/products/a-10/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-10/2.jpg"><img class="hidden" src="img/products/a-10/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-10/3.jpg"><img class="hidden" src="img/products/a-10/3.jpg" alt="Alt"></a>
+				<a href="img/products/rado_main.jpg"><img src="img/products/rado_main.jpg" alt="Alt"></a>		
 				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> коричневые в золотистой оправе</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
+				<div class="info"><div class="title js-title-pull"><b>Rado</b>  Jubile</div>
+				<div class="blok-cost"><span>Цена: </span><s> 1250 </s><b> 799 грн</b></div>
 				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
 				</div>
 			</div>
 			</div>
-            <!-- Блок 3-2 модели Авиатор КОНЕЦ -->
+            <!--Блок 5 модели КОНЕЦ -->
             
             <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<div class="wrap-product">
 				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Поляризационные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
+					<li>Страна производитель: <span><b>Турция</b></span></li>
+                        <li>Пол: <span><b>Мужские</b></span></li>
+                        <li>Материал ремешка: <span><b>Каучук</b></span></li>
+                        <li>Стекло: <span><b>Сапфировое ударопрочное</b></span></li>
+                        <li>Тип механизма: <span><b>Кварцевые</b></span></li>
+                        <li>Застежка: <span><b>Металлическая клипса</b></span></li>
+                        <li>Наличие индикатора даты: <span><b>Есть</b></span></li> 
 				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
+
 					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-4/1.jpg"><img src="img/products/a-4/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-4/2.jpg"><img class="hidden" src="img/products/a-4/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-4/3.jpg"><img class="hidden" src="img/products/a-4/3.jpg" alt="Alt"></a>
+				<a href="img/products/ulysse_main.jpg"><img src="img/products/ulysse_main.jpg" alt="Alt"></a>		
 				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> черные в золотистой оправе</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
+				<div class="info"><div class="title js-title-pull"><b>Ulysse Nardin</b>  Marine</div>
+				<div class="blok-cost"><span>Цена: </span><s> 1250 </s><b> 799 грн</b></div>
 				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
 				</div>
 			</div>
 			</div>
-            <!-- Блок четвертой модели Авиатор КОНЕЦ -->
-            
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-5/1.jpg"><img src="img/products/a-5/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-5/2.jpg"><img class="hidden" src="img/products/a-5/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-5/3.jpg"><img class="hidden" src="img/products/a-5/3.jpg" alt="Alt"></a>
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> синие с градиентом</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!-- Блок 5 модели Авиатор КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Поляризационные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-6/1.jpg"><img src="img/products/a-6/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-6/2.jpg"><img class="hidden" src="img/products/a-6/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-6/3.jpg"><img class="hidden" src="img/products/a-6/3.jpg" alt="Alt"></a>
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> синие в черной оправе</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!-- Блок 6 модели Авиатор КОНЕЦ -->
-            
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Солнцезащитные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-7/1.jpg"><img src="img/products/a-7/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-7/2.jpg"><img class="hidden" src="img/products/a-7/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-7/3.jpg"><img class="hidden" src="img/products/a-7/3.jpg" alt="Alt"></a>
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> Хамелеон</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!-- Блок 7 модели Авиатор КОНЕЦ -->
-            
-            <div class="js-wrap-product col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="wrap-product">
-				<ul class="js-char-pull">
-					<li>Страна производитель: <span><b>Италия</b></span></li>
-                        <li>Пол: <span><b>Унисекс</b></span></li>
-                        <li>Материал линз: <span><b>Стекло</b></span></li>
-                        <li>Защита от ультрафиолета: <span><b>UV400</b></span></li>
-                        <li>Тип линз: <span><b>Поляризационные</b></span></li>
-                        <li>Материал оправы: <span><b>Металлическая</b></span></li>
-                        <li>Комплектация: <span><b>Полная оригинальная</b></span></li> 
-				</ul>
-				<div class="js-wrap-sizer-pull">
-				<div class="class-standart active" onclick="parseData($(this))">Стандартные</div>
-				<!-- <div class="class-standart" onclick="parseData($(this))">Маленькие</div> -->
-				<ul class="js-size-push active">
-					<li>Ширина линз: 55 мм.</li>
-					<li>Высота линз: 60 мм.</li>
-					<li>Длина дужек: 125 мм.</li>
-					<li>Ширина оправы 140 мм.</li>
-				</ul>
-				<!-- <ul class="js-size-push">
-					<li>Ширина линз: -</li>
-					<li>Высота линз: -</li>
-					<li>Длина дужек: -</li>
-					<li>Ширина оправы: -</li>
-				</ul> -->
-			
-				</div>
-					<div class="block-img js-image-pull js-popup-tosrus">
-					<a href="img/products/a-8/1.jpg"><img src="img/products/a-8/1.jpg" alt="Alt"></a>
-				<a href="img/products/a-8/2.jpg"><img class="hidden" src="img/products/a-8/2.jpg" alt="Alt"></a>
-                <a href="img/products/a-8/3.jpg"><img class="hidden" src="img/products/a-8/3.jpg" alt="Alt"></a>
-				</div>
-				<div class="info"><div class="title js-title-pull"><b>Aviator</b> зеркальные серые</div>
-				<div class="blok-cost"><span>Цена: </span><s> 750 </s><b> 499 грн</b></div>
-				<div class="block-buts"><button class="js-moreinfo btn-moreinfo">Подробнее</button><button class="js-btn-order-list btn-order">Заказать</button></div>
-				</div>
-			</div>
-			</div>
-            <!-- Блок 8 модели Авиатор КОНЕЦ -->
+            <!--Блок 6 модели КОНЕЦ -->
             
             
 			</div>
 <!-- Блок одного типа моделей КОНЕЦ -->
+            
+            
 		</div>
 		</div>
 </section>
@@ -1223,44 +452,56 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 		<div class="plusplus">
 			<h5>1+1</h5>
 			<b>=</b>
-			<s>1000грн</s><span>&nbsp;&nbsp;799грн</span>
+			<span>-200 грн</span>
 		</div>
 		</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<form class="form-sale" action="" method="POST">
-				<h6>Заполните форму и получите <b style="color:#cf0e14; font-size:38px">2</b> пары 
-<br>очков <b style="color:#cf0e14">со скидкой!</b></h6>
+				<h6>Заполните форму и получите <b style="color:#cf0e14; font-size:38px">2</b> комплекта 
+<br>часов со скидкой <b style="color:#cf0e14">-200грн!</b></h6>
                     <script src="http://megatimer.ru/s/fa75495fa5f338a44a80c015c8204ee3.js"></script>
                     <br />
                     <input type="text" class="name" placeholder="Ваше имя">
 					<input type="tel" class="phone" placeholder="Ваш телефон">
 					<input type="hidden" class="mark" value="Заказать по акции">
-					<input type="submit" class="submit click_order" value="Заказать по акции">
+					<input type="submit" class="submit click_order" value="Сэкономить 200 грн">
 				</form>
 			</div>
 		</div>
 	</div>
 </section>
     
-    <section id="choose">
+    
+    <section id="service">
 	<div class="container">
-	<div class="row">
+		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<h2>Почему 1237 наших клиентов в сезон
-2016 выбрали именно ray-ban</h2>	
+				<h2>100% гарантия возврата в течении 14 дней</h2>	
 			</div>
 		</div>
 		<div class="row">
-			<div class="bg-choose"><img src="img/bg-choose.jpg" srcset="img/bg-choose-retina.jpg" alt=""></div>
+            <div class="garant">
+                
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<img src="img/14.png" />
+                <ul>
+                <li>В соответствии со <b>ст. 9 Закона</b> потребитель <b>имеет право</b> обменять непродовольственный товар надлежащего качества на аналогичный у продавца (или вернуть деньги), <b>у которого он был приобретен</b>, если товар не удовлетворил его по форме, габаритам, фасону, цвету, размеру или по другим причинам <b>не может быть им использован</b> по назначению.</li>
+<br>
+<li>Потребитель <b>имеет право</b> на обмен товара надлежащего качества в течение <b>четырнадцати дней</b>, не считая дня покупки, если более длительный срок не объявлен продавцом. <b>Обмен товара</b> надлежащего качества производится, если он <b>не использовался</b> и если сохранен его товарный вид, потребительские свойства, пломбы, ярлыки, а также расчетный документ, <b>выданный потребителю вместе с проданным товаром</b>.</li>
+                </ul>
+			</div>
+                
+                </div>
 		</div>
-	</div>
+		</div>
 </section>
+    
     
 <section id="stage">
 	<div class="container">
 		<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<h2>5 шагов, которые отделяют вас и Ray-ban</h2>
+			<h2>Как получить заказ в 5 шагов?</h2>
 		</div>
 		</div>
 		<div class="row">
@@ -1301,7 +542,7 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
                 	<img src="img/stage-img-retina5.png" srcset="img/stage-img-retina5.png" alt="">
                 	<div class="count">5</div>
                 	<p>Поздравляем!
-Вы владелец очков Ray-Ban</p>
+Вы владелец наручных часов</p>
                 </div>
                 </div>
 	</div>
@@ -1317,32 +558,13 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 	<div class="container">
 	<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<h2>Оригинальная комплектация Ray-Ban</h2>	
+			<h2>Вам ничего не нужно докупать.<br> Будет полный комплект</h2>	
 			</div>
 		</div>
 		<div class="row">
-		
-            <!--
-		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-			<div class="wrap-vip">
-				<div class="title">VIP-упаковка</div>
-				<ul>
-					<li class="icon-plus">Очки Ray-Ban</li>
-					<li class="icon-plus">Салфетка из микрофибры</li>
-					<li class="icon-plus">Тканевый чехол</li>
-					<li class="icon-plus">Паспорт Ray-Ban</li>
-					<li class="icon-plus">Кожаный футляр Ray Ban</li>
-                    <li class="icon-plus">Оригинальная коробочка</li>
-				</ul>
-			</div>
-			</div>
+	
             
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-			<img src="img/vip.png" width="50%"/>
-			</div>
--->            
-
-            <img src="img/complect.jpg" width="100%"/>
+            
 		</div>
 	</div>
 </section>
@@ -1389,78 +611,28 @@ _tmr.push({id: "2910816", type: "pageView", start: (new Date()).getTime()});
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<h2>Отзывы наших клиентов</h2>	
+			<h2>Часто задаваемые вопросы</h2>	
 			</div>
 		</div>
 		<div class="row">
-		<!--<div class="col-lg-12" style="text-align: center;">	
-			<div class="wrap-video">
-			<iframe width="352" height="240" src="https://www.youtube.com/embed/pkB2_acWlAM" frameborder="0" allowfullscreen></iframe>
 		
-		</div>
-		<div class="wrap-video">
-			<iframe width="352" height="240" src="https://www.youtube.com/embed/JHAZO_ZYQQ0" frameborder="0" allowfullscreen></iframe>
-		
-		</div>
-		<div class="wrap-video">
-			<iframe width="352" height="240" src="https://www.youtube.com/embed/Rce2qKwnJdg" frameborder="0" allowfullscreen></iframe>
-		
-		</div>
-		<div class="wrap-video">
-			<iframe width="352" height="240" src="https://www.youtube.com/embed/1Rrl63cUBc0" frameborder="0" allowfullscreen></iframe>
+            
+	</div>
+	</div>
+</section>
 
-		</div>
-		<div class="wrap-video">
-			<iframe width="352" height="240" src="https://www.youtube.com/embed/Qa-YYhZB9zk" frameborder="0" allowfullscreen></iframe>
-		
-		</div>
-		</div>-->
-            
-            
-            <div class="row">
-	<div class="img-otzuv1"><img src="img/img-otzuv1.png" width=100% alt=""></div>
-		</div>
-		<div class="row">
-	<div class="img-otzuv2"><img src="img/img-otzuv2.png" width=100% alt=""></div>
-		</div>
-		<div class="row">
-	<div class="img-otzuv3"><img src="img/img-otzuv3.png" width=100% alt=""></div>
-		</div>
-            
-	</div>
-	</div>
-</section>
-<section id="not-model">
-	<div class="container">
-		<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<h2>Не нашли в каталоге подходящую модель?</h2>
-			<h3>Скажите нам об этом и мы найдем для Вас все, что угодно</h3>
-		</div>
-		</div>
-		<div class="row">
-		<form class="form-no-model" action="" method="POST">
-			<input type="text" class="no-model-name" placeholder="Ваше имя">
-			<input type="tel" class="no-model-phone" placeholder="Ваш телефон">
-			<input type="hidden" class="mark" value="Хочу другие">
-			<input type="submit" class="no-model-submit click_order" value="Хочу другие">
-		</form>
-		</div>
-		</div>
-</section>
 <section id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs">
 				<div class="img-footer"><img src="img/logo-header-retina.jpg" alt=""></div>
-				<div class="footer-text-logo"><p>Диллер
-Ray Ban <br> в Украине</p></div>
+				<div class="footer-text-logo"><p>магазин наручных <br>часов в Украине</p></div>
 				
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 				<div class="info-footer">
 					<p><span>Остались вопросы?</span> позвоните нам по телефону</p> <br>
-					<p><span>+38 (096) 126-28-18</span> или оставьте заявку на бесплатную консультацию</p>
+					<p><span>+38 (066) 831-42-30</span> или оставьте заявку на бесплатную консультацию</p>
 					<button class="btn-footer-info">Получить бесплатную консультацию</button>
 				</div>
 			</div>
@@ -1472,24 +644,16 @@ Ray Ban <br> в Украине</p></div>
 	<div class="wrap-cart">
 		<div class="js-close-btn close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
 		<h3 class="js-title-push"></h3>
-		<div class="popup-image-slide js-image-push">
-
-		</div>
+		
 		<div class="wrap-choose">
 			<div class="choose-char">
-				<div class="title">Описание очков:</div>
+				<div class="title">Характеристики часов:</div>
 				<ul class="js-char-push"></ul>
 			</div>
-			<div class="choose-size">
-				<div class="title">Выберите размер:</div>
-				<div class="wrap-sizer js-wrap-sizer-push">
-				
-				</div>
-
-			</div>
+			<div class="popup-image-slide js-image-push"></div>
 		</div>
 		<div class="choose-priсe">
-			<span class="title-priсe">Цена:</span> <strike class="sale">750 </strike><span class="price">499 грн</span>
+			<span class="title-priсe">Цена:</span> <strike class="sale">1250 </strike><span class="price">799 грн</span>
 		</div>
 		<button class="btn-order js-btn-order-cart">Заказать</button>
 	</div>
@@ -1519,25 +683,6 @@ Ray Ban <br> в Украине</p></div>
 	<script src="js/common.js"></script>
 	
     
-    <!-- Код тега ремаркетинга Google -->
-<!--------------------------------------------------
-С помощью тега ремаркетинга запрещается собирать информацию, по которой можно идентифицировать личность пользователя. Также запрещается размещать тег на страницах с контентом деликатного характера. Подробнее об этих требованиях и о настройке тега читайте на странице http://google.com/ads/remarketingsetup.
---------------------------------------------------->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 850835122;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/850835122/?guid=ON&amp;script=0"/>
-</div>
-</noscript>
 
- 
 </body>
 </html>
