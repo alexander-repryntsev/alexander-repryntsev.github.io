@@ -129,6 +129,9 @@ h2:after {
     overflow: hidden;
     max-height: 100%;
 }
+
+
+
 .wrap-product .info .title {
     font-size: 20px;
 }
@@ -536,6 +539,7 @@ h2 {
 .bg-choose img {
     width: 100%;
 }
+
 }
 
 /* Extra Small Devices, Phones */

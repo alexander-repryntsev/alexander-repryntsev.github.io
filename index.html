@@ -28,12 +28,12 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
-    
+<!--     
     <?php
 $path = "./clickfrogru_tcp.php";
 include_once($path);
 ?>
-    
+     -->
 </head>
 
 <body>
@@ -131,7 +131,11 @@ include_once($path);
 				<p>Цена снижена до 34% на 1 день</p>
 			</div>
 			<div class="row  row-eye">
-				<a href="#" class="eye1"></a>
+				<a href="#wayfarer-catalog" class="eye1"></a>
+				<a href="#" class="eye2"></a>
+				<a href="#" class="eye3"></a>
+				<a href="#" class="eye4"></a>
+				<a href="#" class="eye5"></a>
 			</div>
 		</div>
 	</section>
@@ -239,7 +243,7 @@ include_once($path);
 </section> -->
 <!-- Секция каталога НАЧАЛО -->
     
-    <section id="choose">
+<!--     <section id="choose">
 	<div class="container">
 	<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -261,8 +265,27 @@ include_once($path);
 			</div>
 		</div>
 	</div>
-</section>
-    
+</section> -->
+ 	<section class="offer-choose">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3>Что мы можем Вам предложить?</h3>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 offer-choose-left">
+						<p>Обязательно посмотрите это видео</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/NHujVwsvZ6s?rel=0" frameborder="0" allowfullscreen></iframe>
+						<em>Купить наручные часы для себя или в качестве
+							подарка всегда просто и приятно</em>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 offer-right">
+						<img src="img/offer-right.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>   
 <section id="catalog">
 		<div class="container">
 		<div class="row">
@@ -472,29 +495,7 @@ include_once($path);
 </section>
     
     
-    <section id="service">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<h2>100% гарантия возврата в течении 14 дней</h2>	
-			</div>
-		</div>
-		<div class="row">
-            <div class="garant">
-                
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<img src="img/14.png" />
-                <ul>
-                <li>В соответствии со <b>ст. 9 Закона</b> потребитель <b>имеет право</b> обменять непродовольственный товар надлежащего качества на аналогичный у продавца (или вернуть деньги), <b>у которого он был приобретен</b>, если товар не удовлетворил его по форме, габаритам, фасону, цвету, размеру или по другим причинам <b>не может быть им использован</b> по назначению.</li>
-<br>
-<li>Потребитель <b>имеет право</b> на обмен товара надлежащего качества в течение <b>четырнадцати дней</b>, не считая дня покупки, если более длительный срок не объявлен продавцом. <b>Обмен товара</b> надлежащего качества производится, если он <b>не использовался</b> и если сохранен его товарный вид, потребительские свойства, пломбы, ярлыки, а также расчетный документ, <b>выданный потребителю вместе с проданным товаром</b>.</li>
-                </ul>
-			</div>
-                
-                </div>
-		</div>
-		</div>
-</section>
+
     
     
 <section id="stage">
@@ -554,6 +555,29 @@ include_once($path);
 
 	</div>
 </section>
+    <section id="service">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h2>100% гарантия возврата в течении 14 дней</h2>	
+			</div>
+		</div>
+		<div class="row">
+            <div class="garant">
+                
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<img src="img/14.png" />
+                <ul>
+                <li>В соответствии со <b>ст. 9 Закона</b> потребитель <b>имеет право</b> обменять непродовольственный товар надлежащего качества на аналогичный у продавца (или вернуть деньги), <b>у которого он был приобретен</b>, если товар не удовлетворил его по форме, габаритам, фасону, цвету, размеру или по другим причинам <b>не может быть им использован</b> по назначению.</li>
+<br>
+<li>Потребитель <b>имеет право</b> на обмен товара надлежащего качества в течение <b>четырнадцати дней</b>, не считая дня покупки, если более длительный срок не объявлен продавцом. <b>Обмен товара</b> надлежащего качества производится, если он <b>не использовался</b> и если сохранен его товарный вид, потребительские свойства, пломбы, ярлыки, а также расчетный документ, <b>выданный потребителю вместе с проданным товаром</b>.</li>
+                </ul>
+			</div>
+                
+                </div>
+		</div>
+		</div>
+</section>
 <section id="equipment">
 	<div class="container">
 	<div class="row">
@@ -563,8 +587,30 @@ include_once($path);
 		</div>
 		<div class="row">
 	
-            
-            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            	<div class="complect">
+            		<div class="complect-img"><img src="img/k1.png" alt=""></div>
+            		<p>Батарейки</p>
+            	</div>
+            </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            	<div class="complect">
+            		<div class="complect-img"><img src="img/k2.png" alt=""></div>
+            		<p>Часы</p>
+            	</div>
+            </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            	<div class="complect">
+            		<div class="complect-img"><img src="img/k3.png" alt=""></div>
+            		<p>Коробочка</p>
+            	</div>
+            </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            	<div class="complect">
+            		<div class="complect-img"><img src="img/k4.png" alt=""></div>
+            		<p>Инструкция</p>
+            	</div>
+            </div>
 		</div>
 	</div>
 </section>
@@ -615,8 +661,32 @@ include_once($path);
 			</div>
 		</div>
 		<div class="row">
-		
-            
+			<div class="container-question">
+		<div class="wrap-question">
+				<div class="title">Как происходит доставка?</div>
+				<div class="text">Доставляем Новой почтой наложенным платежом
+									в любой регион Украины в течении 1-2 дней.</div>
+		</div>
+           
+           		<div class="wrap-question">
+				<div class="title">Могу ли я проверить их перед покупкой?</div>
+				<div class="text">Конечно, покупая у нас Вы ничем не рискуете. 
+У Вас будет возможность открыть посылку на почте 
+и только потом оплатить (если Вас все устроит).</div>
+		</div>
+				<div class="wrap-question">
+				<div class="title">Как определиться с размером?</div>
+				<div class="text">Ремешок любых часов из нашего каталога
+имеет свойство индивидуальной регулировки
+длины, исходя из размера Вашего запястья.</div>
+		</div>
+				<div class="wrap-question">
+				<div class="title">Я получу такие же часы как на картинке?</div>
+				<div class="text">Было бы безчестно вводить Вас в заблуждение!
+Все фото из каталога были сделаны исключительно нашим
+магазином. Вы получите именно то, что видите на фото.</div>
+		</div> 
+		</div>
 	</div>
 	</div>
 </section>
@@ -625,7 +695,7 @@ include_once($path);
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 hidden-xs">
-				<div class="img-footer"><img src="img/logo-header-retina.jpg" alt=""></div>
+				<div class="img-footer"><img src="img/logo-footer.png" alt=""></div>
 				<div class="footer-text-logo"><p>магазин наручных <br>часов в Украине</p></div>
 				
 			</div>

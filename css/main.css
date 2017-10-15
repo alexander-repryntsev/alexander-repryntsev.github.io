@@ -642,7 +642,7 @@ font-size: 25px;
 }
 
 .title-glases-icon {
-	    color: #d1cec2;
+	    color: #3b3b3b;
     margin-top: 0px;
     font-family: "AgoraSansProBold", sans-serif;
     font-size: 35px;
@@ -655,6 +655,7 @@ display: inline-block;
 margin-right: 20px;
 width: 44px;
 height: 70px;
+vertical-align: middle;
 background: url(../img/glases-icon.jpg) no-repeat;
 	}
 .btn-obsl {
@@ -700,15 +701,15 @@ background: url(../img/glases-icon.jpg) no-repeat;
   z-index: -1;
 }
 .img-footer {
-	width: 133px;
+	width: auto;
 	height: 76px;
 	float: left;
 	margin-right: 20px;
 	padding-top: 15px;
 }
 .img-footer img {
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 100%;
 	float: left;
 
 }
@@ -794,12 +795,45 @@ margin-bottom: 23px;
     z-index: -1;
 }
 #reviews {
-		background: #efede4;
+	background: #d2d1ce;
 	min-height: 150px;
 	position: relative;
   	z-index: 1;
-  	    padding-top: 9px;
+	    padding-top: 9px;
+	    padding-bottom: 80px;
 }
+
+#reviews .title {
+	text-transform: uppercase;
+    text-align: left;
+    color: #252525;
+    display: block;
+    font-family: "AgoraSansProBold", sans-serif;
+    font-size: 24px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 7px;
+}
+
+#reviews .container-question {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-column-gap: 30px;
+grid-row-gap: 54px;
+padding-top: 35px;
+padding-bottom: 35px;
+
+}
+
+#reviews .text {
+    text-align: left;
+    color: #252525;
+    display: block;
+    line-height: 24px;
+    font-family: "AgoraSansProRegular", sans-serif;
+    font-size: 20px;
+    padding-top: 11px;
+}
+
 #reviews:before {
     background: inherit;
     bottom: 100%;
@@ -900,6 +934,29 @@ margin: 4px;
 	color: #98968d;
 	font-family: "AgoraSansProBold", sans-serif;
 	font-size: 30px;
+}
+#equipment .complect img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#equipment .complect-img {
+    height: 105px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#equipment .complect p {
+text-transform: uppercase;
+    text-align: center;
+    color: #252525;
+    display: block;
+    font-family: "AgoraSansProBold", sans-serif;
+    font-size: 24px;
 }
 .wrap-lite ul {
 padding: 0;
@@ -1190,7 +1247,7 @@ height: 100%;
 #offer {
 	background: url(../img/bg-super.jpg) no-repeat;
 	background-position: center center;
-	height: 700px;
+	height: 755px;
 	background-size: cover;
 	min-height: 150px;
 	position: relative;
@@ -1283,22 +1340,22 @@ height: 100%;
 	border-left: 20px solid #cf0e14;
 }
 .plusplus {
-	position: absolute;
-text-align: center;
+text-align: left;
     left: 0px;
-    width: 300px;
+    width: 560px;
     top: 23px;
     z-index: 1;
 }
 .plusplus h5 {
-	color: #d1cec2;
-	font-size: 10rem;
+	color: #2e2d28;
+	font-size: 6rem;
+	display: inline-block;
 margin: 0;
  font-family: "AgoraSansProBold", sans-serif;
     line-height: 120px;
 }
 .plusplus b {
-display: block;
+display: inline-block;
 color: #2a2928;
  font-family: "AgoraSansProBold", sans-serif;
  font-size: 5rem;
@@ -1314,7 +1371,7 @@ color: #2a2928;
 	display: inline-block;
 color: #2a2928;
  font-family: "AgoraSansProBold", sans-serif;
- font-size: 4rem;
+ font-size: 8rem;
 	}
 .cart-popup {
 	position: fixed;
@@ -1667,7 +1724,7 @@ margin:170px auto;
 	background: url("../img/bg-first-screen.jpg") no-repeat;
 	background-position: center top;
 	background-size: cover;
-	min-height: 686px;
+	min-height: 925px;
 }
 
 .first-screen h1 {
@@ -1695,18 +1752,74 @@ margin:170px auto;
 	position: relative;
 }
 .first-screen .eye1 {
-	background: url(../img/eye-hover.png) no-repeat;
-	width: 44px;
-	height: 89px;
-	position: absolute;
-    bottom: 146px;
-    left: 226px;
+	    background: url(../img/eye-hover.png) no-repeat;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    top: 475px;
+    left: 35px;
     opacity: 0;
-    transition: opacity 0.3s
+    transition: opacity 0.3s;
+    background-position: center;
 }
-.first-screen .eye1:hover {
+.first-screen .eye1:hover, 
+.first-screen .eye2:hover, 
+.first-screen .eye3:hover,
+.first-screen .eye4:hover,
+.first-screen .eye5:hover {
 	opacity: 1;
 }
+
+.first-screen .eye2 {
+	    background: url(../img/eye-hover.png) no-repeat;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    top: 516px;
+    left: 289px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-position: center;
+}
+
+
+
+.first-screen .eye3 {
+	    background: url(../img/eye-hover.png) no-repeat;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    top: 566px;
+    left: 567px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-position: center;
+}
+
+.first-screen .eye4 {
+	    background: url(../img/eye-hover.png) no-repeat;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    top: 516px;
+    right: 267px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-position: center;
+}
+
+.first-screen .eye5 {
+	    background: url(../img/eye-hover.png) no-repeat;
+    width: 44px;
+    height: 89px;
+    position: absolute;
+    top: 475px;
+    right: 36px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-position: center;
+}
+
 .garant ul{
         margin-top: 65px;
 }
@@ -1726,4 +1839,47 @@ margin:170px auto;
     margin: 5px 37px 0px;
     width: 53%;
 
+}
+.offer-choose {
+	background: #fbf6ef;
+	    padding-bottom: 62px;
+}
+
+.offer-choose p {
+	position: relative;
+	font-size: 33px;
+	font-family: "Akrobat-ExtraBold", sans-serif;
+	color: #d30000;
+	    margin-bottom: 35px;
+}
+
+.offer-choose p:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 106px;
+	height: 77px;
+	background: url(../img/arrow.png) no-repeat;	
+}
+.offer-choose .offer-choose-left iframe {
+	    border: 2px solid #fff;
+    overflow: hidden;
+	border-radius: 0px 25px 0px 25px;
+}
+.offer-choose em {
+    font-size: 23px;
+    font-family: "Akrobat-Bold", sans-serif;
+    color: #3f7ba5;
+    line-height: 20px;
+    margin-top: 21px;
+    display: block;
+}
+.offer-choose h3 {
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #000;
+	font-family: "Akrobat-Black", sans-serif;
 }

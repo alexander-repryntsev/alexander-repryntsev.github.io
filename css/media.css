@@ -536,6 +536,11 @@ h2 {
 .bg-choose img {
     width: 100%;
 }
+#reviews .container-question {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
 
 /* Extra Small Devices, Phones */

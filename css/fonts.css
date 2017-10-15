@@ -198,3 +198,72 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "Akrobat-Regular";
+    src: url("../fonts/Akrobat/Akrobat-Regular.eot");
+    src: url("../fonts/Akrobat/Akrobat-Regular.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Akrobat/Akrobat-Regular.woff") format("woff"),
+             url("../fonts/Akrobat/Akrobat-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Akrobat-Bold";
+    src: url("../fonts/Akrobat/Akrobat-Bold.eot");
+    src: url("../fonts/Akrobat/Akrobat-Bold.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Akrobat/Akrobat-Bold.woff") format("woff"),
+             url("../fonts/Akrobat/Akrobat-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Akrobat-Thin";
+    src: url("../fonts/Akrobat/Akrobat-Thin.eot");
+    src: url("../fonts/Akrobat/Akrobat-Thin.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Akrobat/Akrobat-Thin.woff") format("woff"),
+             url("../fonts/Akrobat/Akrobat-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Akrobat-Black";
+    src: url("../fonts/Akrobat/Akrobat-Black.eot");
+    src: url("../fonts/Akrobat/Akrobat-Black.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Akrobat/Akrobat-Black.woff") format("woff"),
+             url("../fonts/Akrobat/Akrobat-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Akrobat-SemiBold";
+    src: url("../fonts/Akrobat/Akrobat-SemiBold.eot");
+    src: url("../fonts/Akrobat/Akrobat-SemiBold.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Akrobat/Akrobat-SemiBold.woff") format("woff"),
+             url("../fonts/Akrobat/Akrobat-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Akrobat-Light";
+    src: url("../fonts/Akrobat/Akrobat-Light.eot");
+    src: url("../fonts/Akrobat/Akrobat-Light.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Akrobat/Akrobat-Light.woff") format("woff"),
+             url("../fonts/Akrobat/Akrobat-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Akrobat-ExtraBold";
+    src: url("../fonts/Akrobat/Akrobat-ExtraBold.eot");
+    src: url("../fonts/Akrobat/Akrobat-ExtraBold.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/Akrobat/Akrobat-ExtraBold.woff") format("woff"),
+             url("../fonts/Akrobat/Akrobat-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
