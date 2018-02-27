@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+
+  padding-top: 150px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*[unselectable=on] {
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+button {
+  border: 0;
+}
+
+#main {
+  margin-top: 50px;
+  padding: 20px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 240ms;
+  border: 2px solid;
+  border-radius: 2px;
+  border-color: rgba(0,0,0,0.54);
+}
+
+.btn {
+  height: 33px;
+  vertical-align: middle;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 0.075em;
+  min-width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border-radius: 3px;
+}
+
+.btn-disable {
+  position: relative;
+       -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+     user-select: none; 
+     cursor: default;
+}
+.btn-disable:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(195, 195, 195, .55);
+}
+.btn-green {
+  background: #00A67C;
+}
+
+.btn-red {
+  background: #C05B78;
+}
+
+.dropzone {
+  min-height: 300px;
+  background: #adadad;
+}
+
+
+#main #files-list {
+  position: relative;
+  padding: 10px;
+}
+
+#main .item {
+  width: 20%;
+  float: left;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
+}
+
+#main .item-preview img {
+  width: 100%;
+  height: auto;
+}
+
+#main .item-title {
+  white-space: nowrap;
+  position: relative;
+}
+
+#main .item-remove {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+
+#main .btn-upload {
+  margin-top: 20px;
+}
+
+#main .item-remove span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.upload-buttons-wrapper {
+  margin-bottom: 20px;
+}
