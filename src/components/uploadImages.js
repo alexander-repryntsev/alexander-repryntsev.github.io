@@ -1,5 +1,6 @@
 import React  from 'react';
 import Dropzone from 'react-dropzone';
+import { SketchPicker, BlockPicker } from 'react-color';
 
 export default class UploadImages extends React.Component {
  constructor(props){
@@ -7,28 +8,30 @@ export default class UploadImages extends React.Component {
     this.state={
       filesPreview:[],
       filesToBeSent:[],
-
+		settingsDefaultImage: {
+			colorText: '#969696',
+			backgroundImage: '#ccc',
+		}
     }
   }
  createPlaceholder = (item) => {
         
     const tempImageStore = new Image();
 
-    tempImageStore.src = item.preview;
-   	var self = this;
+	tempImageStore.src = item.preview;
+	var self = this;
     tempImageStore.onload = function() {
 		var canvas = document.createElement('canvas');
 		var ctx = canvas.getContext("2d");
 		canvas.width = this.naturalWidth;
 		canvas.height = this.naturalHeight;
 		// drowing rect
-		ctx.fillStyle = "#ccc";
+		ctx.fillStyle = self.state.settingsDefaultImage.backgroundImage;
 		ctx.fillRect(0, 0, parseInt(this.naturalWidth, 10), parseInt(this.naturalHeight, 10));
 		// drowing text
-      	ctx.fillStyle = "#969696";
+      	ctx.fillStyle = self.state.settingsDefaultImage.colorText;
       	ctx.font = ((this.naturalWidth > this.naturalHeight) ? this.naturalHeight / 5 : this.naturalWidth / 5) + "px Arial";
       	var txt = this.naturalWidth + " x " + this.naturalHeight;
-      	console.log(ctx.measureText(txt).height);
       	ctx.textBaseline="middle"; 
       	ctx.fillText(txt, (this.naturalWidth / 2) - (ctx.measureText(txt).width / 2), (this.naturalHeight / 2));
 		item.placeholder = canvas.toDataURL(item.preview)
@@ -39,6 +42,11 @@ export default class UploadImages extends React.Component {
      	
     	// return tempImageStore.placeholder;
   };
+
+  handleActivatedImage(item) {
+	console.log("tyt");
+  }
+
  removeImage(event) {
  	event.preventDefault();
  	const id = parseInt(event.target.id, 10);
@@ -48,7 +56,34 @@ export default class UploadImages extends React.Component {
 			})
 		})
  }
- 
+
+  removeAllImage(event) {
+  event.preventDefault();
+	if(this.state.filesToBeSent.length) {
+		this.setState({
+			filesToBeSent: []
+		})
+	}
+	else {
+		return false;
+	} 
+  }
+
+  handleChangeComplete = (color, event) => {
+
+	// const id = parseInt(event.target.id, 10);
+    // this.setState({ 
+	// 	settingsDefaultImage: {
+	// 		backgroundImage: color.hex
+	// 	 }
+	// });
+	// this.state.filesToBeSent.map((item, i) => {
+	// 	this.createPlaceholder(item);
+	// })
+	
+	console.log(event.target);
+  };
+
  uploadImages = (acceptedFiles) => {
         acceptedFiles.map((item, i) => {
 			this.createPlaceholder(item);
@@ -67,7 +102,7 @@ return (
       	<button type="button" className="btn btn-green" onClick={() => { dropzoneRef.open() }}>
       		upload
   		</button>
-		<button type="button" disabled={false} className="btn-disable btn btn-red btn-crean">
+		<button type="button" disabled={false} onClick={this.removeAllImage.bind(this)} className={(!this.state.filesToBeSent.length) ? "btn btn-red btn-crean btn-disable" : "btn btn-red btn-crean"  }>
 			Clean
 		</button>
 		</div>
@@ -83,17 +118,24 @@ return (
     			this.state.filesToBeSent.map((item, i) => {
          			return(
 			        	<div className="item" key={"item-" + i}>
+						<div className="settings-panel" id={i}>
+							<BlockPicker
+							color={ this.state.settingsDefaultImage.backgroundImage }
+							onChange={ this.handleChangeComplete }
+							 />
+						</div>
+						<div className="headline">
 			            	<div className="item-title" title={item.name}>
-			            		<span>{item.name}</span>	
+			            		{item.name}	
 			            	</div>
-			            	<div className="item-remove">
-			            		<span id={i} onClick={this.removeImage.bind(this)}>x</span>
-			            	</div>
+			            	<div className="item-remove" id={i} onClick={this.removeImage.bind(this)}></div>
+						</div>
 			            	<div className="item-preview">
-			            		<span><img src={item.placeholder} alt={item.name}/></span>
+
+			            		<img src={item.placeholder} alt={item.name}/>
 			            	</div>
 			            	<div className="item-download">
-			            		<span><a href={item.placeholder} download={item.name}>download</a></span>
+			            		<a href={item.placeholder} download={item.name}>download</a>
 			            	</div>
 			            </div>
         			)

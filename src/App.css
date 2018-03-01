@@ -6,15 +6,13 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
-*[unselectable=on] {
-    -moz-user-select: none;
-    -o-user-select:none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-     user-select: none;
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
 }
+
 button {
   border: 0;
 }
@@ -26,9 +24,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   transition: 240ms;
-  border: 2px solid;
-  border-radius: 2px;
-  border-color: rgba(0,0,0,0.54);
 }
 
 .btn {
@@ -79,7 +74,9 @@ button {
 
 .dropzone {
   min-height: 300px;
-  background: #adadad;
+  border: 3px dashed #ecf0f1;
+  border-radius: 10px;
+    padding: 19px;
 }
 
 
@@ -91,29 +88,77 @@ button {
 #main .item {
   width: 20%;
   float: left;
-  overflow: hidden;
   margin: 20px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 0;
   position: relative;
+  
 }
-
+#main .item-preview {
+  height: 100px;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+}
 #main .item-preview img {
   width: 100%;
   height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 #main .item-title {
   white-space: nowrap;
   position: relative;
+  text-align: left;
+  width: 80%;
+  overflow: hidden;
+  color: #010833;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  text-overflow: ellipsis;
 }
 
 #main .item-remove {
   position: absolute;
   color: #fff;
   cursor: pointer;
-  top: 0;
-  right: 0;
+  top: 15px;
+  width: 10px;
+  height: 9px;
+  right: 19px;
+}
+#main .item-remove:before {
+  content: "";
+  width: 3px;
+  border-radius: 5px;
+  height: 10px;
+  position: absolute;
+  top: -1px;
+  right: 4px;
+  display: block;
+  background: #010833;
+  transform: rotate(-45deg);
+  
 }
 
+#main .item-remove:after {
+  content: "";
+  width: 3px;
+  border-radius: 5px;
+  height: 10px;
+  position: absolute;
+  top: -1px;
+  right: 4px;
+  display: block;
+  background: #010833;
+  transform: rotate(45deg);
+}
 #main .btn-upload {
   margin-top: 20px;
 }
@@ -129,4 +174,32 @@ button {
 }
 .upload-buttons-wrapper {
   margin-bottom: 20px;
+}
+#main .headline {
+  padding: 10px 20px;
+  background: #ececec;
+}
+#main .item-download {
+  padding: 0 20px 20px 20px;
+}
+#main .item-download a {
+  background: #58cb91;
+  color: #fff;
+  border-radius: 2px;
+  height: 30px;
+  letter-spacing: 0.075em;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;  
+  line-height: 30px;
+  width: 100%;
+  display: block;
+}
+#main .settings-panel {
+  position: absolute;
+  bottom: 102%;
+  padding: 20px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background: #fff;
 }
