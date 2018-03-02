@@ -4,18 +4,11 @@ import { SketchPicker, BlockPicker } from 'react-color';
 export default class SettingsImagePlaceholder extends React.Component {
     constructor(props){
         super(props);
+        this.state = {props}
+        console.log(this.state)
     }
-    handleActivatedImage = (event) => {
-        event.stopPropagation();
-        const id = parseInt(event.currentTarget.id, 10);
-        this.setState({
-            settingsDefaultImage: {
-                        modal: true
-                     }
-        })
-        
-      }
-      handleChangeComplete = (color, id) => {
+
+      handleChangeComplete = (color) => {
 
         // const id = parseInt(event.target.id, 10);
         // this.setState({ 
@@ -27,16 +20,19 @@ export default class SettingsImagePlaceholder extends React.Component {
         // 	this.createPlaceholder(item);
         // })
         
-        console.log(id);
+        console.log("color");
       };
     render() {
-        return (
-            <div className="settings-panel" id={i}>
-			    <BlockPicker
-				    color={ this.state.settingsDefaultImage.backgroundImage }
-					onChange={ this.handleChangeComplete }
-			    />
-			</div>
-        );
+            return (
+                (this.state.settingsShow) ?
+                <div className="settings-panel">
+                    <BlockPicker
+                        color={ this.color }
+                        settingsShow={this.state.settingsShow}
+                        onChange={ this.handleChangeComplete }
+                    />
+                </div>
+                : <div>asd</div>
+            );
     }
 }

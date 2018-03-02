@@ -71,7 +71,30 @@ export default class UploadImages extends React.Component {
 	} 
   }
 
+  handleActivatedImage = (event) => {
+	event.stopPropagation();
+	const id = parseInt(event.currentTarget.id, 10);
+	console.log(id);
+	this.state.filesToBeSent.map((item, i) => {
+		if(id === i) {
+			this.setState({
+				settingsDefaultImage: {
+					modal: true
+				}
+			})
+			console.log(this.state.settingsDefaultImage);
 
+		}
+		// this.setState({
+		// 	filesToBeSent: {
+		// 		item: {
+		// 			modal: true
+		// 		}
+		// 	}
+		// })
+	})
+	
+  }
 
  uploadImages = (acceptedFiles) => {
         acceptedFiles.map((item, i) => {
@@ -107,10 +130,10 @@ return (
     			this.state.filesToBeSent.map((item, i) => {
          			return(
 			        	<div className="item" key={"item-" + i}>
-					
-							if (this.state.settingsDefaultImage.modal) {
-								<SettingsImagePlaceholder />
-							}
+							<SettingsImagePlaceholder
+								color={this.state.settingsDefaultImage.backgroundImage}
+								settingsShow={this.state.settingsDefaultImage.modal}
+							/>
 						<div className="headline">
 			            	<div className="item-title" title={item.name}>
 			            		{item.name}	
