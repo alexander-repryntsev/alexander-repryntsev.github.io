@@ -1,5 +1,7 @@
 import React  from 'react';
 import Dropzone from 'react-dropzone';
+import SettingsImagePlaceholder from './settingsImagePlaceholder'
+
 import { SketchPicker, BlockPicker } from 'react-color';
 
 export default class UploadImages extends React.Component {
@@ -11,6 +13,7 @@ export default class UploadImages extends React.Component {
 		settingsDefaultImage: {
 			colorText: '#969696',
 			backgroundImage: '#ccc',
+			modal: false
 		}
     }
   }
@@ -34,7 +37,8 @@ export default class UploadImages extends React.Component {
       	var txt = this.naturalWidth + " x " + this.naturalHeight;
       	ctx.textBaseline="middle"; 
       	ctx.fillText(txt, (this.naturalWidth / 2) - (ctx.measureText(txt).width / 2), (this.naturalHeight / 2));
-		item.placeholder = canvas.toDataURL(item.preview)
+		item.placeholder = canvas.toDataURL(item.preview);
+		item.modal =  self.state.settingsDefaultImage.modal;
      	self.setState({
 	   		filesToBeSent: [...self.state.filesToBeSent, item]
 	   }); 
@@ -43,9 +47,7 @@ export default class UploadImages extends React.Component {
     	// return tempImageStore.placeholder;
   };
 
-  handleActivatedImage(item) {
-	console.log("tyt");
-  }
+
 
  removeImage(event) {
  	event.preventDefault();
@@ -58,7 +60,7 @@ export default class UploadImages extends React.Component {
  }
 
   removeAllImage(event) {
-  event.preventDefault();
+  	event.preventDefault();
 	if(this.state.filesToBeSent.length) {
 		this.setState({
 			filesToBeSent: []
@@ -69,20 +71,7 @@ export default class UploadImages extends React.Component {
 	} 
   }
 
-  handleChangeComplete = (color, event) => {
 
-	// const id = parseInt(event.target.id, 10);
-    // this.setState({ 
-	// 	settingsDefaultImage: {
-	// 		backgroundImage: color.hex
-	// 	 }
-	// });
-	// this.state.filesToBeSent.map((item, i) => {
-	// 	this.createPlaceholder(item);
-	// })
-	
-	console.log(event.target);
-  };
 
  uploadImages = (acceptedFiles) => {
         acceptedFiles.map((item, i) => {
@@ -118,19 +107,17 @@ return (
     			this.state.filesToBeSent.map((item, i) => {
          			return(
 			        	<div className="item" key={"item-" + i}>
-						<div className="settings-panel" id={i}>
-							<BlockPicker
-							color={ this.state.settingsDefaultImage.backgroundImage }
-							onChange={ this.handleChangeComplete }
-							 />
-						</div>
+					
+							if (this.state.settingsDefaultImage.modal) {
+								<SettingsImagePlaceholder />
+							}
 						<div className="headline">
 			            	<div className="item-title" title={item.name}>
 			            		{item.name}	
 			            	</div>
 			            	<div className="item-remove" id={i} onClick={this.removeImage.bind(this)}></div>
 						</div>
-			            	<div className="item-preview">
+			            	<div className="item-preview"  id={i} onClick={this.handleActivatedImage.bind(this)}>
 
 			            		<img src={item.placeholder} alt={item.name}/>
 			            	</div>
