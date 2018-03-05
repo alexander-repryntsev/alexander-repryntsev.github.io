@@ -7,8 +7,8 @@ export default class ItemImagePlaceholder extends React.Component {
     super(props);
     this.state={
         item: props.item,
-        settings: false
-
+        settings: false,
+        loading: false
     }
 }
 
@@ -18,11 +18,35 @@ settings = (id) => {
         settings: !this.state.settings
     })
 }
-componentWillReceiveProps(nextProps) {
-    console.log(nextProps)
+componentWillMount() {
+      const tempImageStore = new Image();
+        tempImageStore.src = this.state.item.preview;
+        var self = this;
+        tempImageStore.onload = function() {
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext("2d");
+            canvas.width = this.naturalWidth;
+            canvas.height = this.naturalHeight;
+            // drowing rect
+            ctx.fillStyle = self.state.backgroundImage;
+            ctx.fillRect(0, 0, parseInt(this.naturalWidth, 10), parseInt(this.naturalHeight, 10));
+            // drowing text
+              ctx.fillStyle = self.state.colorText;
+              ctx.font = ((this.naturalWidth > this.naturalHeight) ? this.naturalHeight / 5 : this.naturalWidth / 5) + "px Arial";
+              var txt = this.naturalWidth + " x " + this.naturalHeight;
+              ctx.textBaseline="middle"; 
+              ctx.fillText(txt, (this.naturalWidth / 2) - (ctx.measureText(txt).width / 2), (this.naturalHeight / 2));
+              self.state.item.placeholder = canvas.toDataURL(self.state.item.preview);
+              self.setState({
+                  loading: true
+              })
 }
-
+}
 render() {
+    if(this.state.loading) {
+
+        console.log("there");
+    }
         return (
             <div className="item">
             {
