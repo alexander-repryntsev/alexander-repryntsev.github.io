@@ -4,27 +4,30 @@ import { SketchPicker, BlockPicker } from 'react-color';
 export default class SettingsImagePlaceholder extends React.Component {
     constructor(props){
         super(props);
-        this.state = {props}
-        console.log(this.state)
+            this.state= {
+				settingsDefaultImage: {
+					colorText: '#969696',
+					backgroundImage: '#ccc',
+					modal: false
+			}
+    	}
     }
 
-      handleChangeComplete = (color) => {
+  handleActivatedImage = (event) => {
+	event.stopPropagation();
+	const id = parseInt(event.currentTarget.id, 10);
+	
+		this.setState({
+			...this.state.settingsDefaultImage,
+			modal: this.state.filesToBeSent.map((item, i) => {
+				return true
+			})
+		})
+}
 
-        // const id = parseInt(event.target.id, 10);
-        // this.setState({ 
-        // 	settingsDefaultImage: {
-        // 		backgroundImage: color.hex
-        // 	 }
-        // });
-        // this.state.filesToBeSent.map((item, i) => {
-        // 	this.createPlaceholder(item);
-        // })
-        
-        console.log("color");
-      };
     render() {
             return (
-                (this.state.settingsShow) ?
+                (this.props.settingsShow) ?
                 <div className="settings-panel">
                     <BlockPicker
                         color={ this.color }

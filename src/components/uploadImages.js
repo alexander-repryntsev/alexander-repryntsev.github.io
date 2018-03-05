@@ -9,13 +9,9 @@ export default class UploadImages extends React.Component {
     super(props);
     this.state={
       filesPreview:[],
-      filesToBeSent:[],
-		settingsDefaultImage: {
-			colorText: '#969696',
-			backgroundImage: '#ccc',
-			modal: false
-		}
+      filesToBeSent:[]
     }
+  console.log(props);
   }
  createPlaceholder = (item) => {
         
@@ -29,16 +25,15 @@ export default class UploadImages extends React.Component {
 		canvas.width = this.naturalWidth;
 		canvas.height = this.naturalHeight;
 		// drowing rect
-		ctx.fillStyle = self.state.settingsDefaultImage.backgroundImage;
+		ctx.fillStyle = "#999";
 		ctx.fillRect(0, 0, parseInt(this.naturalWidth, 10), parseInt(this.naturalHeight, 10));
 		// drowing text
-      	ctx.fillStyle = self.state.settingsDefaultImage.colorText;
+      	ctx.fillStyle = "#c1c1c1";
       	ctx.font = ((this.naturalWidth > this.naturalHeight) ? this.naturalHeight / 5 : this.naturalWidth / 5) + "px Arial";
       	var txt = this.naturalWidth + " x " + this.naturalHeight;
       	ctx.textBaseline="middle"; 
       	ctx.fillText(txt, (this.naturalWidth / 2) - (ctx.measureText(txt).width / 2), (this.naturalHeight / 2));
 		item.placeholder = canvas.toDataURL(item.preview);
-		item.modal =  self.state.settingsDefaultImage.modal;
      	self.setState({
 	   		filesToBeSent: [...self.state.filesToBeSent, item]
 	   }); 
@@ -71,31 +66,6 @@ export default class UploadImages extends React.Component {
 	} 
   }
 
-  handleActivatedImage = (event) => {
-	event.stopPropagation();
-	const id = parseInt(event.currentTarget.id, 10);
-	console.log(id);
-	this.state.filesToBeSent.map((item, i) => {
-		if(id === i) {
-			this.setState({
-				settingsDefaultImage: {
-					modal: true
-				}
-			})
-			console.log(this.state.settingsDefaultImage);
-
-		}
-		// this.setState({
-		// 	filesToBeSent: {
-		// 		item: {
-		// 			modal: true
-		// 		}
-		// 	}
-		// })
-	})
-	
-  }
-
  uploadImages = (acceptedFiles) => {
         acceptedFiles.map((item, i) => {
 			this.createPlaceholder(item);
@@ -107,6 +77,7 @@ export default class UploadImages extends React.Component {
  render() {
 
 let dropzoneRef;
+        		console.log(this.state.filesToBeSent)
 
 return (
      <div className="container-uploadimage">
@@ -127,20 +98,18 @@ return (
 	        <div id="files-list" className="clearfix">
         	{	 
         		(this.state.filesToBeSent>= 0) ? <div>Try dropping some files here, or click to select files to upload.</div> :
+    			
     			this.state.filesToBeSent.map((item, i) => {
          			return(
 			        	<div className="item" key={"item-" + i}>
-							<SettingsImagePlaceholder
-								color={this.state.settingsDefaultImage.backgroundImage}
-								settingsShow={this.state.settingsDefaultImage.modal}
-							/>
+							<SettingsImagePlaceholder />
 						<div className="headline">
 			            	<div className="item-title" title={item.name}>
 			            		{item.name}	
 			            	</div>
 			            	<div className="item-remove" id={i} onClick={this.removeImage.bind(this)}></div>
 						</div>
-			            	<div className="item-preview"  id={i} onClick={this.handleActivatedImage.bind(this)}>
+			            	<div className="item-preview"  id={i}>
 
 			            		<img src={item.placeholder} alt={item.name}/>
 			            	</div>
