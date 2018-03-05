@@ -1,5 +1,5 @@
 import React  from 'react';
-// import { SettingsImagePlaceholder } from './settingsImagePlaceholder';
+import SettingsImagePlaceholder from './settingsImagePlaceholder';
 
 
 export default class ItemImagePlaceholder extends React.Component {
@@ -11,37 +11,31 @@ export default class ItemImagePlaceholder extends React.Component {
 
     }
 }
-removeImage(event) {
-    event.preventDefault();
-    const self = this;
+
+
+settings = (id) => {
     this.setState({
-        item: this.state.item.filter((item, index) => {
-           return index !== this.props.id
-           })
-       })
+        settings: !this.state.settings
+    })
+}
+componentWillReceiveProps(nextProps) {
+    console.log(nextProps)
 }
 
-// settings = (id) => {
-// console.log(id);
-// }
-  
 render() {
-    // const settings = 
-      console.log(this.state.item)
         return (
             <div className="item">
-            {/* {
-                (this.state.item.settings) ? <div className="settings-panel" id={i}>
-                </div>
-            }   */}
+            {
+                (this.state.settings) ? <div className="settings-panel"> <SettingsImagePlaceholder /> </div> : ""
+            }  
               
                 <div className="headline">
                     <div className="item-title" title={this.state.item.name}>
                         {this.state.item.name}	
                     </div>
-                    <div className="item-remove" onClick={(e) => this.removeImage(e)} ></div>
+                    <div className="item-remove" ></div>
                 </div>
-                <div className="item-preview" >
+                <div className="item-preview" onClick={(e) => this.settings(e)}>
 
                     <img src={this.state.item.placeholder} alt={this.state.item.name}/>
                 </div>
@@ -51,5 +45,5 @@ render() {
             </div>
         )
 
-}
+    }
 }
