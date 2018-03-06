@@ -4,10 +4,6 @@ import { BlockPicker } from 'react-color';
 export default class SettingsImagePlaceholder extends React.Component {
  constructor(props){
     super(props);
-    this.state={
-		colorText: '#969696',
-		backgroundImage: '#ccc',
-    }
   }
 
   render() {
@@ -16,7 +12,7 @@ export default class SettingsImagePlaceholder extends React.Component {
     return (
         <div>
             <BlockPicker
-			    color={ this.state.backgroundImage }
+			      // color={ this.state.backgroundImage }
 			    // onChange={ this.handleChangeComplete }
 							 />
         </div>
