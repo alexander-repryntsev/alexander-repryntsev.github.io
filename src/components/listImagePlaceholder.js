@@ -22,41 +22,9 @@ export default class ListPlaceholder extends React.Component {
     // }
     
     componentWillReceiveProps = (nextProps) => {
-        
-        nextProps.filesToBeSent.map((item) => {
-            // const tempImageStore = new Image();
-        // tempImageStore.src = item.preview;
-        var self = this;
-        // tempImageStore.onload = function() {
-        //     var canvas = document.createElement('canvas');
-        //     var ctx = canvas.getContext("2d");
-        //     canvas.width = this.naturalWidth;
-        //     canvas.height = this.naturalHeight;
-        //     // drowing rect
-        //     ctx.fillStyle = self.state.backgroundImage;
-        //     ctx.fillRect(0, 0, parseInt(this.naturalWidth, 10), parseInt(this.naturalHeight, 10));
-        //     // drowing text
-        //       ctx.fillStyle = self.state.colorText;
-        //       ctx.font = ((this.naturalWidth > this.naturalHeight) ? this.naturalHeight / 5 : this.naturalWidth / 5) + "px Arial";
-        //       var txt = this.naturalWidth + " x " + this.naturalHeight;
-        //       ctx.textBaseline="middle"; 
-        //       ctx.fillText(txt, (this.naturalWidth / 2) - (ctx.measureText(txt).width / 2), (this.naturalHeight / 2));
-        //     item.placeholder = canvas.toDataURL(item.preview);
-        
-        //работает не правильно 
-            // this.setState({
-            //     list: [...this.state.list, item]
-            // })
-        //работает правильно 
-        this.setState(prevState => ({
-                list: [prevState.list.push(item)] && prevState.list
-            }))
-        //работает правильно 
-            // self.state.list.push(item); 
-        // }
-
-    })
-        
+        this.setState({
+            list: [...this.state.list, ...nextProps.filesToBeSent]
+        })
     }
     
     render() {
