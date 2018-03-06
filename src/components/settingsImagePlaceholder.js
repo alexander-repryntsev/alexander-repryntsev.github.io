@@ -6,14 +6,19 @@ export default class SettingsImagePlaceholder extends React.Component {
     super(props);
   }
 
+  handleChangeComplete = (color, event) => {
+    this.setState({ background: color.hex });
+    console.log(color);
+  };
+
   render() {
 
     
     return (
         <div>
             <BlockPicker
-			      // color={ this.state.backgroundImage }
-			    // onChange={ this.handleChangeComplete }
+			      color={ this.props.background }
+			    onChange={ this.handleChangeComplete }
 							 />
         </div>
     )

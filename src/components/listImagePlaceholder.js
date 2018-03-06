@@ -5,8 +5,6 @@ export default class ListPlaceholder extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            colorText: '#969696',
-            backgroundImage: '#ccc',
             list: []
         }
     }
