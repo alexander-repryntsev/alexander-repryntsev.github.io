@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+.App {
+  text-align: center;
+
+}
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+#root, .App, #main {
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+li {
+  list-style-type: none;
+}
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+
+.btn {
+  vertical-align: middle;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 0.075em;
+  min-width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border-radius: 3px;
+}
+
+.btn-disable {
+  position: relative;
+       -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+     user-select: none; 
+     cursor: default;
+}
+.btn-disable:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(195, 195, 195, .55);
+}
+.btn-green {
+  background: #00A67C;
+}
+
+.btn-red {
+  background: #C05B78;
+}
+
+.dropzone {
+  min-height: 300px;
+  border: 3px dashed #ecf0f1;
+  border-radius: 10px;
+    padding: 19px;
+}
+
+
+#main #files-list {
+  position: relative;
+  padding: 50px 80px;
+  height: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 90px 120px;
+}
+#main .dropping-text {
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: #7b7b7b;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+}
+#main .item {
+  width: 20%;
+  float: left;
+  margin: 20px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 0;
+  position: relative;
+  
+}
+#main .item:hover {
+  background: rgba(0, 0, 128, .5)
+}
+
+#main .item.checked {
+  background: rgba(0, 0, 128, 1)
+}
+
+#main .item-preview {
+  height: 100px;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+}
+#main .item-preview img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#main .item-title {
+  white-space: nowrap;
+  position: relative;
+  text-align: left;
+  width: 80%;
+  overflow: hidden;
+  color: #010833;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  text-overflow: ellipsis;
+}
+
+#main .item-remove {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: 15px;
+  width: 10px;
+  height: 9px;
+  right: 19px;
+}
+#main .item-remove:before {
+  content: "";
+  width: 3px;
+  border-radius: 5px;
+  height: 10px;
+  position: absolute;
+  top: -1px;
+  right: 4px;
+  display: block;
+  background: #010833;
+  transform: rotate(-45deg);
+  
+}
+
+#main .item-remove:after {
+  content: "";
+  width: 3px;
+  border-radius: 5px;
+  height: 10px;
+  position: absolute;
+  top: -1px;
+  right: 4px;
+  display: block;
+  background: #010833;
+  transform: rotate(45deg);
+}
+#main .btn-upload {
+  margin-top: 20px;
+}
+
+#main .item-remove span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.upload-buttons-wrapper {
+  position: fixed;
+  box-shadow: 1px 3px 14px 0px rgba(0,0,0,.12);
+  z-index: 11;
+  display: block;
+  padding-left: 8px;
+  padding-right: 8px;
+  -ms-flex-negative: 0;
+  right: 15px;
+  flex-shrink: 0;
+  top: 15px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+#main .headline {
+  padding: 10px 20px;
+  background: #ececec;
+}
+#main .item-download {
+  padding: 0 20px 20px 20px;
+}
+#main .item-download a {
+  background: #58cb91;
+  color: #fff;
+  border-radius: 2px;
+  height: 30px;
+  letter-spacing: 0.075em;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;  
+  line-height: 30px;
+  width: 100%;
+  display: block;
+}
+#main .settings-panel {
+  position: absolute;
+  bottom: 102%;
+  padding: 20px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background: #fff;
+}
+
+.container-uploadimage {
+  max-width: calc(100% - 300px);
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+}
+.panel-settings {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+.dropzone {
+  padding: 0;
+  border: none;
+  height: 100%;
+}
+
+.tab-btn {
+  height: 44px;
+  width: 100%;
+  cursor: pointer;
+}
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid navy;
+}
+.react-tabs__tab--selected {
+  background: orangered
+}
