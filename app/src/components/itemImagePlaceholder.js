@@ -1,6 +1,6 @@
 import React  from 'react';
 // import { SettingsImagePlaceholder } from './settingsImagePlaceholder';
-import { BlockPicker } from 'react-color';
+// import { BlockPicker } from 'react-color';
 
 
 export default class ItemImagePlaceholder extends React.Component {

@@ -2,7 +2,7 @@ import React  from 'react';
 import { BlockPicker } from 'react-color';
 
 export default class SettingsImagePlaceholder extends React.Component {
- constructor(props){
+ constructor(props) {
     super(props);
   }
 

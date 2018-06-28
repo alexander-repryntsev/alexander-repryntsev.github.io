@@ -1,13 +1,12 @@
 import React  from 'react';
-import { BlockPicker } from 'react-color';
-import firebase from 'firebase';
-import {upload} from '../helpers/upload';
-import {URL} from 'url';
+// import { BlockPicker } from 'react-color';
+// import firebase from 'firebase';
+// import {upload} from '../helpers/upload';
+// import {URL} from 'url';
 
-
-export default class ItemImagePlaceholder extends React.Component {
+export default class ItemPlaceholder extends React.Component {
  constructor(props){
-    super(props);
+     super(props);
     this.state={
         item: props.item,
         colorText: '#969696',
@@ -15,11 +14,15 @@ export default class ItemImagePlaceholder extends React.Component {
         settings: false,
         loading: false,
         progress: 0,
-        checked: false
+        checked: false,
+        id: props.id
     }
+    console.log("aaaa", props)
 }
 
 checkItem = () => {
+    
+    this.props.handlerEditList(!this.state.checked, this.state.id);
     this.setState({
         checked: !this.state.checked
     })
@@ -64,12 +67,13 @@ b64toBlob(b64Data, contentType, sliceSize) {
 //   var img = document.createElement('img');
 //   img.src = blobUrl;
 //   document.body.appendChild(img);
-
+removeImage = (e) => {
+    console.log(e)
+}
 renderPlaceholder() {
     const tempImageStore = new Image();
     tempImageStore.src = this.state.item.preview;
     var self = this;
-    console.log("self", self);
     tempImageStore.onload = function() {
         var canvas = document.createElement('canvas');
         var ctx = canvas.getContext("2d");
@@ -85,35 +89,39 @@ renderPlaceholder() {
           ctx.textBaseline="middle"; 
           ctx.fillText(txt, (this.naturalWidth / 2) - (ctx.measureText(txt).width / 2), (this.naturalHeight / 2));
           self.state.item.placeholder = canvas.toDataURL(self.state.item.preview);
-          const realData = self.state.item.placeholder.split(",")[1];
-          var blob =  self.b64toBlob(realData, self.state.item.type);
+
+        //   const realData = self.state.item.placeholder.split(",")[1]; commented by me later  
+        //   var blob =  self.b64toBlob(realData, self.state.item.type); commented by me later
         //   var blobUrl = window.URL.createObjectURL(blob);
         // upload(blob, (event) => {
         //     console.log("Callback event",event);
         //     })
+        
         self.setState({
             loading: true
         })
     }
 }
 componentWillMount() {
+    
     this.renderPlaceholder();
 
 }
 
-handleChangeComplete = (color, event) => {
-    this.setState({ 
-        background: color.hex 
-    });
-    this.renderPlaceholder();
-  };
+// handleChangeComplete = (color, event) => {
+//     this.setState({ 
+//         background: color.hex 
+//     });
+//     this.renderPlaceholder();
+//   };
 
 
 render() {
- 
         return (
-            <div className={`item ${(this.state.checked) ? 'checked' : ''}`} onClick={(e) => this.checkItem(e)}>
-            {/* {
+            <div className={`item ${(this.state.checked) ? 'checked' : ''}`} onClick={this.checkItem}>
+            {
+                
+                /* {
                 (this.state.settings) ? <div className="settings-panel"> 
                 <BlockPicker
                     color={ this.state.background }
@@ -122,10 +130,11 @@ render() {
             }   */}
               
                 <div className="headline">
+                
                     <div className="item-title" title={this.state.item.name}>
                         {this.state.item.name}	
                     </div>
-                    <div className="item-remove" ></div>
+                    <div className="item-remove" onClick={() => this.props.handlerRemoveImage(this.state.id) }></div>
                 </div>
                 <div className="item-preview">
                     {(!this.state.loading) ? <div>Loading...</div> : <img src={this.state.item.placeholder} alt={this.state.item.name}/> }
