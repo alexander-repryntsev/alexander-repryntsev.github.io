@@ -8,47 +8,55 @@ export default class UploadImages extends React.Component {
  constructor(props){
     super(props);
     this.state={
-	  filesToBeSent:[],
-	  editList: [],
+		filesToBeSent:[],
+		editList: [],
+		listUpload: [],
+		defaultFormat: {
+			colorText: '#969696',
+			background: '#cccccc',
+	  }
     }
   }
 
-  removeAllImage(event) {
-	event.preventDefault();
-	if(this.state.filesToBeSent.length) {
-		  this.setState({
-			  filesToBeSent: []
-		  })
-	  }
-	  else {
-		  return false;
-	  } 
+  	removeAllImage(event) {
+		event.preventDefault();
+		
+		if(this.state.filesToBeSent.length) {
+			this.setState({
+				filesToBeSent: []
+			})
+		}
+		else {
+			return false;
+		} 
 	}
-	handlerEditList2 = (value) => {
+
+	getEditListUploadTo = (list) => {
+		console.log(list)
+		// this.setState({
+		// 	listUpload: list
+		// })
+		// console.log("delete", this.state.listUpload);
+		// this.state.listUpload.push(list);
+	}
+
+	uploadImages(acceptedFiles) { 
 		this.setState({
-			editList: [...this.state.editList, ...value]
+			filesToBeSent: acceptedFiles.map((item) => {
+				const id = Math.floor(Math.random() * 0xFFFF);
+			return { id, item};
+			})
 		})
-
-console.log(this.state.editList);
-	}
-uploadImages(acceptedFiles) { 
-
-	this.setState({
-		filesToBeSent: acceptedFiles.map((item) => {
-			const id = Math.floor(Math.random() * 0xFFFF);
-		return { id, item};
-		})
-	})
 }
 
 
 
 render() {
-
+console.log("upload", this);
 let dropzoneRef;
 return (
      <div className="container-uploadimage">
-	 <PanelSettings settingsList={this.state.editList} />
+	 {/* <PanelSettings settingsList={this.state.editList} /> */}
      <div className="upload-buttons-wrapper">	
 	 <RaisedButton label="Upload" className="btn" backgroundColor="#2962FF" onClick={() => { dropzoneRef.open() }}/>
 
@@ -65,7 +73,8 @@ return (
 	        <div id="files-list" className="clearfix">
 			<ListImagePlaceholder
 				filesToBeSent= {this.state.filesToBeSent}
-				// getEditList2={this.handlerEditList2}
+				getEditListUpload={this.getEditListUploadTo.bind(this)}
+				defaultFormat={this.state.defaultFormat}
 			/>
         	{/* <button id="downloadLink" className="btn btn-disable btn-green btn-upload">download</button> */}
         	</div>	

@@ -7,25 +7,31 @@ import React  from 'react';
 export default class ItemPlaceholder extends React.Component {
  constructor(props){
      super(props);
-    this.state={
+    this.state = {
         item: props.item,
-        colorText: '#969696',
-        background: '#cccccc',
+        colorText: this.props.defaultFormat.colorText,
+        background: this.props.defaultFormat.background,
         settings: false,
         loading: false,
         progress: 0,
         checked: false,
         id: props.id
     }
-    console.log("aaaa", props)
+    console.log(this.state.colorText);
+    console.log(this.state.background);
+    
 }
 
 checkItem = () => {
-    
-    this.props.handlerEditList(!this.state.checked, this.state.id);
+ 
     this.setState({
         checked: !this.state.checked
     })
+    this.props.handlerEditList(!this.state.checked, this.state.id);
+}
+
+getItemData() {
+    this.props.setEditList(this.state.checked, this.state.id);
 }
 
 settings = (id) => {
@@ -102,8 +108,10 @@ renderPlaceholder() {
         })
     }
 }
+componentDidMount() {
+    this.getItemData();
+}
 componentWillMount() {
-    
     this.renderPlaceholder();
 
 }
