@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>React Native</title>
+</head>
+<style>
+    .item {
+        width: calc(25% - 20px);
+        height: auto;
+        margin: 10px;
+        float: left;
+    }
+     .item img {
+        width: 100%;
+        height: auto;
+     }
+     canvas {
+        width: 1000px;
+        height: 100px;
+     }
+</style>
+<body>
+	
+<div id="main">
+    <!-- <div id="drop_zone">Drop files here</div> -->
+	<div id="imagelist">
+        
+    </div>
+</div>
+<!-- <canvas id="c"></canvas> -->
+<button id="create">Create</button>
+<a id="downloadLink">Download</a>
+
+<input type="file" id="files" name="files[]" multiple />
+
+<output id="list"></output>
+
+<div class="listImage"></div>
+<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type = "text/javascript" src = "fabric.js"></script>
+<script type = "text/javascript" src = "common.js"></script>
+<script type = "text/javascript" src = "jszip.min.js"></script>
+
+</body>
+</html>
