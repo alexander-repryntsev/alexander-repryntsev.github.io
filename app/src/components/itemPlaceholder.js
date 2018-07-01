@@ -17,7 +17,7 @@ export default class ItemPlaceholder extends React.Component {
         checked: false,
         id: props.id
     }
-    console.log(this.state.colorText);
+    console.log(this.state);
     console.log(this.state.background);
     
 }
@@ -31,7 +31,7 @@ checkItem = () => {
 }
 
 getItemData() {
-    this.props.setEditList(this.state.checked, this.state.id);
+    // this.props.setEditList(this.state.checked, this.state.id);
 }
 
 settings = (id) => {
@@ -151,9 +151,9 @@ render() {
                  <a href={this.state.item.placeholder}  download={this.state.item.name}>download</a>
                 </div>
                 
-                <div className="item-upload">
+                {/* <div className="item-upload">
                  <a href={this.state.item.placeholder} data-blow={this.state.item.placeholder}>upload to firebase</a>
-                </div>
+                </div> */}
             </div>
         )
 

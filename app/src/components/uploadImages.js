@@ -8,7 +8,8 @@ export default class UploadImages extends React.Component {
  constructor(props){
     super(props);
     this.state={
-		filesToBeSent:[],
+		uploadedFiles:[],
+		availabilityImages: false,
 		editList: [],
 		listUpload: [],
 		defaultFormat: {
@@ -18,41 +19,40 @@ export default class UploadImages extends React.Component {
     }
   }
 
-  	removeAllImage(event) {
-		event.preventDefault();
-		
-		if(this.state.filesToBeSent.length) {
+	handlerRemoveAllImage() {
+		if(this.state.uploadedFiles.length) {
 			this.setState({
-				filesToBeSent: []
+				uploadedFiles: []
 			})
 		}
 		else {
 			return false;
-		} 
+		}
 	}
+	getEditList = (editList) => {
+		
+		this.setState({
+			uploadedFiles: editList
+		})
+		this.forceUpdate();
 
-	getEditListUploadTo = (list) => {
-		console.log(list)
-		// this.setState({
-		// 	listUpload: list
-		// })
+		console.log("editList", editList)
+		console.log("this.state.uploadedFiles", this.state.uploadedFiles)
 		// console.log("delete", this.state.listUpload);
 		// this.state.listUpload.push(list);
 	}
 
 	uploadImages(acceptedFiles) { 
+		acceptedFiles.map((el, i)=>{
+			el.id = Math.floor(Math.random() * 0xFFFFF);
+		})
 		this.setState({
-			filesToBeSent: acceptedFiles.map((item) => {
-				const id = Math.floor(Math.random() * 0xFFFF);
-			return { id, item};
-			})
+			uploadedFiles: [...this.state.uploadedFiles, ...acceptedFiles]
 		})
 }
 
 
-
 render() {
-console.log("upload", this);
 let dropzoneRef;
 return (
      <div className="container-uploadimage">
@@ -60,7 +60,7 @@ return (
      <div className="upload-buttons-wrapper">	
 	 <RaisedButton label="Upload" className="btn" backgroundColor="#2962FF" onClick={() => { dropzoneRef.open() }}/>
 
-		<button type="button" onClick={this.removeAllImage.bind(this)} className={(!this.state.filesToBeSent.length) ? "btn btn-red btn-crean btn-disable" : "btn btn-red btn-crean"  }>
+		<button type="button" onClick={this.handlerRemoveAllImage.bind(this)} className={(!this.state.uploadedFiles.length) ? "btn btn-red btn-crean btn-disable" : "btn btn-red btn-crean"  }>
 			Clean
 		</button>
 		</div>
@@ -72,8 +72,8 @@ return (
 	        disableClick={true}>
 	        <div id="files-list" className="clearfix">
 			<ListImagePlaceholder
-				filesToBeSent= {this.state.filesToBeSent}
-				getEditListUpload={this.getEditListUploadTo.bind(this)}
+				uploadedFiles= {this.state.uploadedFiles}
+				getEditList={this.getEditList.bind(this)}
 				defaultFormat={this.state.defaultFormat}
 			/>
         	{/* <button id="downloadLink" className="btn btn-disable btn-green btn-upload">download</button> */}
