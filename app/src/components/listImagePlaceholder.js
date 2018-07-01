@@ -37,8 +37,7 @@ export default class ListImagePlaceholder extends React.Component {
                
                 this.state.editList[index].isChecked = status;
                 this.forceUpdate();
-            }
-              
+            }       
         })
        
     }
