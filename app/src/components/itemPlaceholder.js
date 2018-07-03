@@ -11,33 +11,12 @@ export default class ItemPlaceholder extends React.Component {
         item: props.item,
         colorText: this.props.defaultFormat.colorText,
         background: this.props.defaultFormat.background,
-        settings: false,
         loading: false,
         progress: 0,
-        checked: false,
-        id: props.id
+        id: props.id,
+        editable: this.props.defaultFormat.editable
     }
-    console.log(this.state);
-    console.log(this.state.background);
     
-}
-
-checkItem = () => {
- 
-    this.setState({
-        checked: !this.state.checked
-    })
-    this.props.handlerEditList(!this.state.checked, this.state.id);
-}
-
-getItemData() {
-    // this.props.setEditList(this.state.checked, this.state.id);
-}
-
-settings = (id) => {
-    this.setState({
-        settings: !this.state.settings
-    })
 }
 
 
@@ -73,9 +52,7 @@ b64toBlob(b64Data, contentType, sliceSize) {
 //   var img = document.createElement('img');
 //   img.src = blobUrl;
 //   document.body.appendChild(img);
-removeImage = (e) => {
-    console.log(e)
-}
+
 renderPlaceholder() {
     const tempImageStore = new Image();
     tempImageStore.src = this.state.item.preview;
@@ -108,14 +85,21 @@ renderPlaceholder() {
         })
     }
 }
-componentDidMount() {
-    this.getItemData();
-}
+
 componentWillMount() {
     this.renderPlaceholder();
 
 }
-
+componentWillReceiveProps = (nextProps) => {
+      console.log("nextProps", nextProps)
+    if(nextProps.defaultFormat.background !== this.state.background) {
+        this.setState({
+            background: nextProps.defaultFormat.background
+        }, () => {
+            this.renderPlaceholder();
+        })
+    }
+}
 // handleChangeComplete = (color, event) => {
 //     this.setState({ 
 //         background: color.hex 
@@ -127,15 +111,6 @@ componentWillMount() {
 render() {
         return (
             <div className={`item ${(this.state.checked) ? 'checked' : ''}`} onClick={this.checkItem}>
-            {
-                
-                /* {
-                (this.state.settings) ? <div className="settings-panel"> 
-                <BlockPicker
-                    color={ this.state.background }
-                    onChange={ this.handleChangeComplete }
-                /> </div> : ""
-            }   */}
               
                 <div className="headline">
                 

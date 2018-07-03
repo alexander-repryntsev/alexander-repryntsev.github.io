@@ -9,12 +9,11 @@ export default class UploadImages extends React.Component {
     super(props);
     this.state={
 		uploadedFiles:[],
-		availabilityImages: false,
-		editList: [],
 		listUpload: [],
 		defaultFormat: {
 			colorText: '#969696',
 			background: '#cccccc',
+			editable: false
 	  }
     }
   }
@@ -30,16 +29,9 @@ export default class UploadImages extends React.Component {
 		}
 	}
 	getEditList = (editList) => {
-		
 		this.setState({
 			uploadedFiles: editList
 		})
-		this.forceUpdate();
-
-		console.log("editList", editList)
-		console.log("this.state.uploadedFiles", this.state.uploadedFiles)
-		// console.log("delete", this.state.listUpload);
-		// this.state.listUpload.push(list);
 	}
 
 	uploadImages(acceptedFiles) { 
@@ -56,8 +48,9 @@ render() {
 let dropzoneRef;
 return (
      <div className="container-uploadimage">
-	 {/* <PanelSettings settingsList={this.state.editList} /> */}
+	 <PanelSettings settingsList={this.state.editList} />
      <div className="upload-buttons-wrapper">	
+	 <RaisedButton label="Check all" className="btn" backgroundColor="#69cc01de"/>
 	 <RaisedButton label="Upload" className="btn" backgroundColor="#2962FF" onClick={() => { dropzoneRef.open() }}/>
 
 		<button type="button" onClick={this.handlerRemoveAllImage.bind(this)} className={(!this.state.uploadedFiles.length) ? "btn btn-red btn-crean btn-disable" : "btn btn-red btn-crean"  }>

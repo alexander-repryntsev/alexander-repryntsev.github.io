@@ -14,12 +14,6 @@ this.state = {
 
 }
 
-componentWillReceiveProps = (nextProps) => {
-  this.setState({
-    settingsEditList: [...this.state.settingsEditList, ...nextProps.settingsList]
-  })
-}
-
 render() {  
   const editItem = this.state.settingsEditList.map((item, i) => {
     return (

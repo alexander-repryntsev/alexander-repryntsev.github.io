@@ -28,12 +28,6 @@ export default class ListImagePlaceholder extends React.Component {
             })
     }
 
-    setEditList = (status, id) => {
-        this.state.editList.push({"id": id, "isChecked": status});
-        // this.props.getEditListUpload({"id": id, "isChecked": status});
-        console.log(this.state.editList);
-    }
-
     handlerEditList = (status, id) => {
         this.state.editList.map((item, index) => {
             if(item.id === id) {
@@ -60,14 +54,17 @@ export default class ListImagePlaceholder extends React.Component {
     // }
 
     componentWillReceiveProps = (nextProps) => {
-        console.log("nextProps", nextProps.uploadedFiles);
-        console.log("list", this.state.list);
-        if(nextProps.uploadedFiles === this.state.list) {
-        } else {
+      
+        if(nextProps.defaultFormat !== this.state.defaultFormat) {
+            this.setState({
+                defaultFormat: nextProps.defaultFormat
+            })
+        }
+
+        if(nextProps.uploadedFiles !== this.state.list) {
             this.setState({
                 list: nextProps.uploadedFiles
             })
-
         }
       
     }
@@ -79,7 +76,7 @@ export default class ListImagePlaceholder extends React.Component {
         const items = this.state.list.map((el, i) => {
 
                     return (
-                    <ItemPlaceholder defaultFormat={this.state.defaultFormat} key={el.id} id={el.id} item={el} handlerEditList={this.handlerEditList.bind(el.id)} handlerRemoveImage={this.handlerRemoveImage.bind(el.id)} getEditList={this.handlerEditList}/>
+                    <ItemPlaceholder defaultFormat={this.state.defaultFormat} key={el.id} id={el.id} item={el} handlerRemoveImage={this.handlerRemoveImage.bind(el.id)} />
                         
                     )
                 })
