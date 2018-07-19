@@ -1,22 +1,21 @@
 import React  from 'react';
 // import { BlockPicker } from 'react-color';
 // import firebase from 'firebase';
-// import {upload} from '../helpers/upload';
+import {upload} from '../helpers/upload';
 // import {URL} from 'url';
+import update from 'react-addons-update';
+
 
 export default class ItemPlaceholder extends React.Component {
  constructor(props){
      super(props);
     this.state = {
-        item: props.item,
-        colorText: this.props.defaultFormat.colorText,
-        background: this.props.defaultFormat.background,
-        loading: false,
-        progress: 0,
-        id: props.id,
-        editable: this.props.defaultFormat.editable
+        id: props.item.id,
+        item: props.item.el,
+        imageProperty: this.props.defaultFormat,
+        editable: props.item.editable,
+        loading: false
     }
-    
 }
 
 
@@ -63,19 +62,20 @@ renderPlaceholder() {
         canvas.width = this.naturalWidth;
         canvas.height = this.naturalHeight;
         // drowing rect
-        ctx.fillStyle = self.state.background;
+        ctx.fillStyle = self.state.imageProperty.background;
         ctx.fillRect(0, 0, parseInt(this.naturalWidth, 10), parseInt(this.naturalHeight, 10));
         // drowing text
-          ctx.fillStyle = self.state.colorText;
+          ctx.fillStyle = self.state.imageProperty.colorText;
           ctx.font = ((this.naturalWidth > this.naturalHeight) ? this.naturalHeight / 5 : this.naturalWidth / 5) + "px Arial";
           var txt = this.naturalWidth + " x " + this.naturalHeight;
           ctx.textBaseline="middle"; 
           ctx.fillText(txt, (this.naturalWidth / 2) - (ctx.measureText(txt).width / 2), (this.naturalHeight / 2));
           self.state.item.placeholder = canvas.toDataURL(self.state.item.preview);
 
-        //   const realData = self.state.item.placeholder.split(",")[1]; commented by me later  
-        //   var blob =  self.b64toBlob(realData, self.state.item.type); commented by me later
-        //   var blobUrl = window.URL.createObjectURL(blob);
+          const realData = self.state.item.placeholder.split(",")[1]; 
+          var blob =  self.b64toBlob(realData, self.state.item.type); 
+          var blobUrl = window.URL.createObjectURL(blob);
+        console.log(blob);
         // upload(blob, (event) => {
         //     console.log("Callback event",event);
         //     })
@@ -86,38 +86,62 @@ renderPlaceholder() {
     }
 }
 
+checkedImage = () => {
+
+    this.setState({
+        editable: !this.state.editable
+    }, () => {
+        this.props.handlerCheckedImage(this.state.id, this.state.editable);
+    })
+
+}
+
 componentWillMount() {
     this.renderPlaceholder();
 
 }
+
 componentWillReceiveProps = (nextProps) => {
-      console.log("nextProps", nextProps)
-    if(nextProps.defaultFormat.background !== this.state.background) {
+
+    if(nextProps.defaultFormat.background !== this.state.imageProperty.background) {
+        let newBackground = update(this.state, {
+            imageProperty: {
+                background: {$set: nextProps.defaultFormat.background}
+            }
+        })
+        this.setState(newBackground);
+    }
+
+    if(nextProps.defaultFormat.colorText !== this.state.imageProperty.colorText) {
+        let newColorText = update(this.state, {
+            imageProperty: {
+                colorText: {$set: nextProps.defaultFormat.colorText}
+            }
+        })
+        this.setState(newColorText);
+    }
+
+    if(nextProps.item.editable !== this.state.editable) {
         this.setState({
-            background: nextProps.defaultFormat.background
-        }, () => {
-            this.renderPlaceholder();
+            editable: nextProps.item.editable
         })
     }
+        if(this.state.editable) {
+            this.renderPlaceholder();
+        }
+    
 }
-// handleChangeComplete = (color, event) => {
-//     this.setState({ 
-//         background: color.hex 
-//     });
-//     this.renderPlaceholder();
-//   };
-
 
 render() {
         return (
-            <div className={`item ${(this.state.checked) ? 'checked' : ''}`} onClick={this.checkItem}>
+            <div className={`item ${(this.state.editable) ? 'checked' : ''}`} onClick={this.checkedImage.bind(this)}>
               
                 <div className="headline">
                 
                     <div className="item-title" title={this.state.item.name}>
                         {this.state.item.name}	
                     </div>
-                    <div className="item-remove" onClick={() => this.props.handlerRemoveImage(this.state.id) }></div>
+                    {/* <div className="item-remove" onClick={() => this.props.handlerRemoveImage(this.state.id) }></div> */}
                 </div>
                 <div className="item-preview">
                     {(!this.state.loading) ? <div>Loading...</div> : <img src={this.state.item.placeholder} alt={this.state.item.name}/> }

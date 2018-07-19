@@ -8,9 +8,9 @@ export const upload = (form, callback = () => {}) => {
        console.log(form);
     let data = new FormData();
     data.append('files', form, 'test.jpg');
-    // _.each(form, (file) => {
-    //     data.append('files', file);
-    // });
+    _.each(form, (file) => {
+        data.append('files', file);
+    });
 
     const config = {
         onUploadProgress: (event) => {

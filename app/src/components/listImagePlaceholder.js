@@ -1,12 +1,12 @@
 import React from 'react';
 import ItemPlaceholder from './itemPlaceholder';
+import update from 'react-addons-update';
 
 export default class ListImagePlaceholder extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             list: [],
-            editList: [],
             defaultFormat: this.props.defaultFormat
          
         }
@@ -14,44 +14,24 @@ export default class ListImagePlaceholder extends React.Component {
   
     handlerRemoveImage = (id) => {
         this.setState({
-            list: this.state.list.filter((item, index) => {
+            list: this.state.list.filter((item) => {
                 return item.id !== id;
                })
             }, () => {
                 this.props.getEditList(this.state.list);
             })
-            
-        this.setState({
-            editList: this.state.editList.filter((item, index) => {
-                return item.id !== id;
-                })
-            })
     }
 
-    handlerEditList = (status, id) => {
-        this.state.editList.map((item, index) => {
+    handlerCheckedImage = (id, status) => {
+        console.log(id, status);
+        this.state.list.map((item, index) => {
             if(item.id === id) {
-               
-                this.state.editList[index].isChecked = status;
-                this.forceUpdate();
-            }       
-        })
-       
-    }
-    // shouldComponentUpdate(nextProps, nextState) {
-    //     if(nextState.list === nextProps.uploadedFiles) {
-    //         console.log("nextProps", nextProps.uploadedFiles);
-    //         console.log("nextState", nextState);
-
-    //         return false;
-    //     } else {
-    //         this.setState({
-    //             list: nextProps.uploadedFiles
-    //         });
-    //         return true;
-
-    //     }
-    // }
+               this.state.list[index].editable =  status;
+                   this.forceUpdate();
+                   this.props.getEditList(this.state.list);
+            }
+    })
+}
 
     componentWillReceiveProps = (nextProps) => {
       
@@ -76,7 +56,7 @@ export default class ListImagePlaceholder extends React.Component {
         const items = this.state.list.map((el, i) => {
 
                     return (
-                    <ItemPlaceholder defaultFormat={this.state.defaultFormat} key={el.id} id={el.id} item={el} handlerRemoveImage={this.handlerRemoveImage.bind(el.id)} />
+                    <ItemPlaceholder defaultFormat={this.state.defaultFormat} isDownloadArchive={this.props.isDownloadArchive} handlerCheckedImage={this.handlerCheckedImage.bind(this)} key={el.id} id={el.id} item={el} handlerRemoveImage={this.handlerRemoveImage.bind(el.id)} />
                         
                     )
                 })

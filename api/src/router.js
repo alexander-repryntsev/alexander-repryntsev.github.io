@@ -1,6 +1,8 @@
 import path from 'path';
 import _ from 'lodash';
 import File from './models/file';
+import Post from './models/post';
+
 import {ObjectID} from 'mongodb';
 
 class AppRouter {
@@ -26,9 +28,12 @@ setupRouters() {
        let fileModels = [];
 
        _.each(files, (fileObject) => {
-        const newFile = new File(app).initWithObject(fileObject).toJSON();
-        fileModels.push(newFile);
-       });
+        console.log("fileModels", files);
+
+           const newFile = new File(app).initWithObject(fileObject).toJSON();
+           fileModels.push(newFile);
+        });
+        
        if(fileModels.length) {
         db.collection('files').insertMany(fileModels, (err, result) => {
             if(err) {
@@ -38,9 +43,21 @@ setupRouters() {
                     }
                 })
             }
-            return res.json({
-                files: fileModels
+            console.log("user", req.body, result);
+            let post = new Post(app).initWithObject({
+                files: result.insertedIds
+            });
+
+            //let save post object to posts collection.
+
+            db.collection('posts').insertOne(post, (err, result) => {
+                if(err) {
+                    return res.status(503).json({error: {message: "Your upload could not be saved"}});
+                }
+                return res.json(post);
             })
+
+            
         })
        }
        else {
@@ -80,6 +97,12 @@ setupRouters() {
             })
         })
     });
+     // Routing download zip files
+     app.get('/:id/download', (req, res, next) => {
+        return res.json({
+            hi: 'here'
+        });
+    })
 }
 }
 
