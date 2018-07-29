@@ -14,7 +14,8 @@ export default class ItemPlaceholder extends React.Component {
         item: props.item.el,
         imageProperty: this.props.defaultFormat,
         editable: props.item.editable,
-        loading: false
+        loading: false,
+        blob: null
     }
 }
 
@@ -73,15 +74,17 @@ renderPlaceholder() {
           self.state.item.placeholder = canvas.toDataURL(self.state.item.preview);
 
           const realData = self.state.item.placeholder.split(",")[1]; 
-          var blob =  self.b64toBlob(realData, self.state.item.type); 
+          var blob =  self.b64toBlob(realData, self.state.item.type);
+          blob.name =  self.state.item.name;
           var blobUrl = window.URL.createObjectURL(blob);
-        console.log(blob);
+        console.log("blob", blob);
         // upload(blob, (event) => {
         //     console.log("Callback event",event);
         //     })
         
         self.setState({
-            loading: true
+            loading: true,
+            blob: blob
         })
     }
 }
@@ -102,6 +105,9 @@ componentWillMount() {
 }
 
 componentWillReceiveProps = (nextProps) => {
+    if(nextProps.isNeedBlob) {
+        this.props.getBlob(this.state.blob);
+    }
 
     if(nextProps.defaultFormat.background !== this.state.imageProperty.background) {
         let newBackground = update(this.state, {

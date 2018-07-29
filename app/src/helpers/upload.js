@@ -5,11 +5,13 @@ import URL from 'url';
 
 export const upload = (form, callback = () => {}) => {
     const url = `${apiUrl}`;
-       console.log(form);
+    console.log("form", form);
+    let files = _.get(form, 'files', []);
+    
     let data = new FormData();
-    data.append('files', form, 'test.jpg');
-    _.each(form, (file) => {
-        data.append('files', file);
+    // data.append('files', form, 'blob.jpg');
+    _.each(files, (file) => {
+        data.append('files', file, file.name);
     });
 
     const config = {

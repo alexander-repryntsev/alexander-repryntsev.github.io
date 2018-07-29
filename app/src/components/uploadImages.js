@@ -14,6 +14,7 @@ export default class UploadImages extends React.Component {
     super(props);
     this.state={
 		uploadedFiles:[],
+		rejectedFiles: [],
 		defaultFormat: {
 			colorText: '#969696',
 			background: '#cccccc',
@@ -21,8 +22,10 @@ export default class UploadImages extends React.Component {
 	  },
 	  isCheckedAllImage: false,
 	  form: {
-		files: null
-	  }
+		files: []
+	  },
+	  isNeedBlob: false,
+	  arrayBlobs: []
 	}
 	this._formValidation = this._formValidation.bind(this);
   }
@@ -116,8 +119,15 @@ export default class UploadImages extends React.Component {
 		}
 	}
 
-	uploadImages(acceptedFiles) { 
+	uploadImages(acceptedFiles, rejectedFiles) {
 		let imagesObj = [];
+			this.setState({
+				rejectedFiles: rejectedFiles
+			}, ()=> {
+				console.log("rejectedFiles", this.state.rejectedFiles);
+
+			})
+
 		let files = _.get(this.state, 'form.files', [])
 		acceptedFiles.map((el, i)=>{
 				let id = Math.floor(Math.random() * 0xFFFFF);
@@ -139,10 +149,20 @@ handlerCheckedImage = (id, statusEditable) => {
 	})
 }
 
-downloadZip = () => {
-	// upload(blob, (event) => {
-    //     //     console.log("Callback event",event);
-    //         })
+handlerDownloadZip = () => {
+	this.setState({
+		isNeedBlob: true
+	});
+	
+}
+getBlob = (blob) => {
+		this.state.form.files.push(blob);
+		if(this.state.form.files.length == this.state.uploadedFiles.length) {
+			console.log("this.state.form.files", this.state.form.files);
+			upload(this.state.form, (event) => {
+				console.log("Callback event", event);
+			})
+		}
 }
 
 handlerIsCheckAllImages = () => {
@@ -175,7 +195,7 @@ return (
 	 getColorText={this.setColorText.bind(this)}
 	 />
      <div className="upload-buttons-wrapper">
-	 <RaisedButton label="Download all" onClick={this.downloadZip.bind(this)} className="btn" backgroundColor="#69cc01de"/>
+	 <RaisedButton label="Download all" onClick={this.handlerDownloadZip.bind(this)} className="btn" backgroundColor="#69cc01de"/>
 
 	 <RaisedButton label="check all" onClick={this.handlerIsCheckAllImages.bind(this)} className="btn" backgroundColor="#69cc01de"/>
 	 <RaisedButton label="Upload" className="btn" backgroundColor="#2962FF" onClick={() => { dropzoneRef.open() }}/>
@@ -198,7 +218,7 @@ return (
 					
 					this.state.uploadedFiles.map((el, i) => {
 						return (
-							<ItemPlaceholder defaultFormat={this.state.defaultFormat} handlerCheckedImage={this.handlerCheckedImage.bind(this)} key={el.id} id={el.id} item={el} />
+							<ItemPlaceholder defaultFormat={this.state.defaultFormat} getBlob={this.getBlob.bind(this)} isNeedBlob={this.state.isNeedBlob} handlerCheckedImage={this.handlerCheckedImage.bind(this)} key={el.id} id={el.id} item={el} />
 						)
 					})
 				}
@@ -207,6 +227,12 @@ return (
        
         <div>
         </div>
+		{
+			this.state.rejectedFiles.map((el, i)=> {
+				console.log(el)
+				return <div key={i}>Файл {el.name} не загрузился</div>
+			})
+		}
        </div>
     );
  }
