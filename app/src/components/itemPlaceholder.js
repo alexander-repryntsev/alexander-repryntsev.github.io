@@ -15,7 +15,9 @@ export default class ItemPlaceholder extends React.Component {
         imageProperty: this.props.defaultFormat,
         editable: props.item.editable,
         loading: false,
-        blob: null
+        blob: null,
+        width: null,
+        height: null
     }
 }
 
@@ -62,6 +64,8 @@ renderPlaceholder() {
         var ctx = canvas.getContext("2d");
         canvas.width = this.naturalWidth;
         canvas.height = this.naturalHeight;
+        console.log("this.naturalWidth", this.naturalWidth);
+        console.log("self.props.item.width", self.props.item.width);
         // drowing rect
         ctx.fillStyle = self.state.imageProperty.background;
         ctx.fillRect(0, 0, parseInt(this.naturalWidth, 10), parseInt(this.naturalHeight, 10));
@@ -84,7 +88,9 @@ renderPlaceholder() {
         
         self.setState({
             loading: true,
-            blob: blob
+            blob: blob,
+            width: canvas.width,
+            height: canvas.height
         })
     }
 }
@@ -139,27 +145,41 @@ componentWillReceiveProps = (nextProps) => {
 }
 
 render() {
+
+    console.log(this.props.item.height * 100 / this.props.item.width)
         return (
-            <div className={`item ${(this.state.editable) ? 'checked' : ''}`} onClick={this.checkedImage.bind(this)}>
-              
-                <div className="headline">
-                
-                    <div className="item-title" title={this.state.item.name}>
-                        {this.state.item.name}	
+            <figure className="grid-item">
+                <div className="image-wrapper">
+                    <div className="image-block" style={{paddingTop: this.props.item.height * 100 / this.props.item.width + '%'}}>
+                        {(!this.state.loading) ? <div>Loading...</div> : <img className="image" src={this.state.item.placeholder} alt={this.state.item.name}/> }
                     </div>
-                    {/* <div className="item-remove" onClick={() => this.props.handlerRemoveImage(this.state.id) }></div> */}
                 </div>
-                <div className="item-preview">
-                    {(!this.state.loading) ? <div>Loading...</div> : <img src={this.state.item.placeholder} alt={this.state.item.name}/> }
-                </div>
-                <div className="item-download">
-                 <a href={this.state.item.placeholder}  download={this.state.item.name}>download</a>
-                </div>
+            <figcaption className="item-title">
+                <h6 title={this.state.item.name}>{this.state.item.name}</h6>
+                <input type="checkbox" name={`checked-${(this.state.id)}`} checked={(this.state.editable) ? 'checked' : ''} className="button-checked" id={`checked-${(this.state.id)}`}/>  
+                <label htmlFor={`checked-${(this.state.id)}`} className={`item ${(this.state.editable) ? 'checked' : ''}`} onClick={this.checkedImage.bind(this)}></label> 
+            </figcaption>
+            </figure>
+            // <div className={`item ${(this.state.editable) ? 'checked' : ''}`} onClick={this.checkedImage.bind(this)}>
+              
+            //   {/* <div className="item-download">
+            //      <a href={this.state.item.placeholder}  download={this.state.item.name}>download</a>
+            //     </div> */}
+            //     <div className="item-preview">
+            //         {(!this.state.loading) ? <div>Loading...</div> : <img src={this.state.item.placeholder} alt={this.state.item.name}/> }
+            //     </div>
                 
-                {/* <div className="item-upload">
-                 <a href={this.state.item.placeholder} data-blow={this.state.item.placeholder}>upload to firebase</a>
-                </div> */}
-            </div>
+            //     <div className="headline">
+                
+            //     <div className="item-title" title={this.state.item.name}>
+            //         {this.state.item.name}	
+            //     </div>
+            //     {/* <div className="item-remove" onClick={() => this.props.handlerRemoveImage(this.state.id) }></div> */}
+            // </div>
+            //     {/* <div className="item-upload">
+            //      <a href={this.state.item.placeholder} data-blow={this.state.item.placeholder}>upload to firebase</a>
+            //     </div> */}
+            // </div>
         )
 
     }

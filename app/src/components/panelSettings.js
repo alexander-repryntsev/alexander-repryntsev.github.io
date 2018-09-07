@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlockPicker } from 'react-color';
+import { TwitterPicker } from 'react-color';
 
 // import classnames from 'classnames';
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -33,18 +33,16 @@ render() {
 
     return (
         <div className="panel-settings">
-
-            <h1>Settings</h1>
             <div className="block-setting">
             <h2>Background</h2>
-            <BlockPicker
+            <TwitterPicker
 			      color={ this.state.background }
 			      onChange={ this.handleChangeCompleteBackground }
 							 />
             </div>
             <div className="block-setting">
-            <h2>Color of text</h2>
-            <BlockPicker
+            <h2>Color text</h2>
+            <TwitterPicker
 			      color={ this.state.colorText }
 			      onChange={ this.handleChangeCompleteColorText }
 							 />

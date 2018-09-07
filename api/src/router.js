@@ -29,7 +29,6 @@ setupRouters() {
        let fileModels = [];
 
        _.each(files, (fileObject) => {
-        console.log("fileModels", files);
 
            const newFile = new File(app).initWithObject(fileObject).toJSON();
            fileModels.push(newFile);
@@ -115,10 +114,11 @@ setupRouters() {
        const id = _.get(req, 'params.id', null);
        this.getPostById(id, (err, result) => {
            if(err) {
-            return res.status(404).json({error:{message: "File not found."}})
-           }
-           const files = _.get(result, 'files', []);
-           const archiver = new FileArchiver(app, files, res).download();
+               return res.status(404).json({error:{message: "File not found."}})
+            }
+            const files = _.get(result, 'files', []);
+            const archiver = new FileArchiver(app, files, res).download();
+            console.log("tyt", archiver);
            return archiver;
        })
     })
